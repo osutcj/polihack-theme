@@ -1,56 +1,227 @@
-{{!< default}}
-{{!-- The tag above means: insert everything in this file
-into the {body} of the default.hbs template --}}
-
-<div class="site-header-content">
+{{!< default}} {{!-- The tag above means: insert everything in this file into the {body} of the default.hbs template
+    --}} <div class="site-header-content">
     {{#if @site.cover_image}}
-        {{!-- This is a responsive image, it loads different sizes depending on device
-        https://medium.freecodecamp.org/a-guide-to-responsive-images-with-ready-to-use-templates-c400bd65c433 --}}
-        <img class="site-header-cover"
-            srcset="{{img_url @site.cover_image size="s"}} 300w,
-                    {{img_url @site.cover_image size="m"}} 600w,
-                    {{img_url @site.cover_image size="l"}} 1000w,
-                    {{img_url @site.cover_image size="xl"}} 2000w"
-            sizes="100vw"
-            src="{{img_url @site.cover_image size="xl"}}"
-            alt=""
-        />
+    {{!-- This is a responsive image, it loads different sizes depending on device
+    https://medium.freecodecamp.org/a-guide-to-responsive-images-with-ready-to-use-templates-c400bd65c433 --}}
+    <img class="site-header-cover" srcset="{{img_url @site.cover_image size=" s"}} 300w, {{img_url @site.cover_image
+        size="m" }} 600w, {{img_url @site.cover_image size="l" }} 1000w, {{img_url @site.cover_image size="xl" }} 2000w"
+        sizes="100vw" src="{{img_url @site.cover_image size=" xl"}}" alt="" />
     {{/if}}
     <h1 class="site-title">
         {{#if @site.logo}}
-            <img class="site-logo" src="{{img_url @site.logo size="l"}}" alt="{{@site.title}}" />
+        <img class="site-logo" src="{{img_url @site.logo size=" l"}}" alt="{{@site.title}}" />
         {{else}}
-            {{@site.title}}
+        {{@site.title}}
         {{/if}}
     </h1>
     <p>{{@site.description}}</p>
-    {{!-- <div
-        class="frosted-glass"
-        style="
+    {{!-- <div class="frosted-glass" style="
             background-color: white;
             width: 384px;
             height: 100%;
             z-index: 101;
             align-self: flex-start;
             border-radius: 8px;
-        "
-    >
+        ">
 
     </div> --}}
-</div>
+    </div>
 
-{{!-- The main content area --}}
-<main id="site-main" class="site-main outer">
-    <div class="inner posts">
+    {{!-- The main content area --}}
+    <main id="site-main" class="site-main outer" style="width: 100%;">
 
-        <div class="post-feed">
-            {{#foreach posts}}
+        <!-- Presentation sections -->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h1>Ce este polihack?</h1>
+                    <p class="description-text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                        unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                        survived not only five centuries, but also the leap into electronic typesetting, remaining
+                        essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                        containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+                        PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+                <div class="col-sm-12 col-md-6" style="display:flex; justify-content: center; align-items; center">
+                    <img src="/content/images/background_ph.png" width="300" />
+                </div>
+            </div>
 
-                {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
-                {{> "post-card"}}
+            <div class="row">
+                <div class="col-sm-12 col-md-6" style="display:flex; justify-content: center; align-items; center">
+                    <img src="/content/images/background_ph.png" width="300" />
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <h1>De ce sa participi?</h1>
+                    <p class="description-text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                        unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                        survived not only five centuries, but also the leap into electronic typesetting, remaining
+                        essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                        containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+                        PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+            </div>
+        </div>
+        <div class="red-background">
+            {{!-- <div class="red-background-overlay"></div> --}}
+            <div class="container">
+                <div class="row">
+                    <div>
+                        <h1 style="text-align: center; color: white; margin-bottom: 3vw;">La ce categorii te poti
+                            inscrie?</h1>
+                    </div>
 
-            {{/foreach}}
+                    <!--CARD 1 -->
+                    <div class="col-sm-12 col-md-3 container-center">
+                        <div>
+                            <div class="container-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                                    class="bi bi-code-slash svg-background" viewBox="0 0 16 16" style="color: white;">
+                                    <path
+                                        d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z" />
+                                </svg>
+                            </div>
+                            <div class="card-body">
+                                <h1 class="card-title">WEB</h1>
+                                <p class="card-text">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    It has survived not only five centuries, but also the leap into electronic
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--CARD 2 -->
+                    <div class="col-sm-12 col-md-3 container-center">
+                        <div>
+                            <div class="container-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                                    class="bi bi-phone svg-background" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z" />
+                                    <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                                </svg>
+                            </div>
+                            <div class="card-body">
+                                <h1 class="card-title">MOBILE</h1>
+                                <p class="card-text">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    It has survived not only five centuries, but also the leap into electronic
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--CARD 3 -->
+                    <div class="col-sm-12 col-md-3 container-center">
+                        <div>
+                            <div class="container-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                                    class="bi bi-cpu svg-background" viewBox="0 0 16 16">
+                                    <path
+                                        d="M5 0a.5.5 0 0 1 .5.5V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2A2.5 2.5 0 0 1 14 4.5h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14a2.5 2.5 0 0 1-2.5 2.5v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14A2.5 2.5 0 0 1 2 11.5H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2A2.5 2.5 0 0 1 4.5 2V.5A.5.5 0 0 1 5 0zm-.5 3A1.5 1.5 0 0 0 3 4.5v7A1.5 1.5 0 0 0 4.5 13h7a1.5 1.5 0 0 0 1.5-1.5v-7A1.5 1.5 0 0 0 11.5 3h-7zM5 6.5A1.5 1.5 0 0 1 6.5 5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3zM6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z" />
+                                </svg>
+                            </div>
+                            <div class="card-body">
+                                <h1 class="card-title">EMBEDDED</h1>
+                                <p class="card-text">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    It has survived not only five centuries, but also the leap into electronic
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--CARD 4 -->
+                    <div class="col-sm-12 col-md-3 container-center">
+                        <div>
+                            <div class="container-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                                    class="bi bi-emoji-laughing svg-background" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                    <path
+                                        d="M12.331 9.5a1 1 0 0 1 0 1A4.998 4.998 0 0 1 8 13a4.998 4.998 0 0 1-4.33-2.5A1 1 0 0 1 4.535 9h6.93a1 1 0 0 1 .866.5zM7 6.5c0 .828-.448 0-1 0s-1 .828-1 0S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 0-1 0s-1 .828-1 0S9.448 5 10 5s1 .672 1 1.5z" />
+                                </svg>
+                            </div>
+                            <div class="card-body">
+                                <h1 class="card-title">JUNIOR</h1>
+                                <p class="card-text">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    It has survived not only five centuries, but also the leap into electronic
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
 
-    </div>
-</main>
+        <!-- SPONSORI -->
+        <div id="sponsors">
+            <h1 style="text-align: center; font-size: 3.6em">SPONSORI</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-3 container-center">
+                        <a href="#">
+                            <div class="sponsors">
+                                <img src="/content/images/SAS-UTCN.webp" width="200">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-3 container-center">
+                        <a href="#">
+                            <div class="sponsors">
+                                <img src="/content/images/SAS-UTCN.webp" width="200">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-3 container-center">
+                        <a href="#">
+                            <div class="sponsors">
+                                <img src="/content/images/SAS-UTCN.webp" width="200">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-3 container-center">
+                        <a href="#">
+                            <div class="sponsors">
+                                <img src="/content/images/SAS-UTCN.webp" width="200">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--<div class="inner posts">
+
+            <div class="post-feed">
+
+
+
+                {{#foreach posts}}
+
+                {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
+                {{ "post-card"}}
+
+                {{/foreach}}
+            </div>
+
+        </div> -->
+    </main>
