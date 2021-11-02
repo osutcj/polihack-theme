@@ -25,14 +25,14 @@
     text-align: center;
     font-size: 25px;
     font-weight: bold;
-    color: white;
+    color: var(--bs-gray-900);
     margin-top: 2vh;
 }
 
 .card-text {
     font-size: 18px;
     /* text-align: justify; */
-    color: white;
+    color: var(--bs-gray-900);
     text-align: center;
 }
 
@@ -68,7 +68,7 @@
 }
 
 .svg-background { 
-    background: linear-gradient(to bottom right,#000000,#b60303) !important;
+    background: #ed1c24;
     border-radius: 50%;
     padding: 10px;
     color: white;
@@ -86,4 +86,22 @@
 .sponsors:hover {
     opacity: 50%;
     transition-duration: 0.3s;
+}
+
+.special-shadow {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.special-shadow2 {
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.move-up-on-hover {
+    position: relative;
+    top: 0;
+    transition: 0.3s ease;
+}
+
+.move-up-on-hover:hover {
+    top: -10px;
 }

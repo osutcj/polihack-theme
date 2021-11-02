@@ -1,5 +1,4 @@
-{{!< default}} {{!-- The tag above means: insert everything in this file into the {body} of the default.hbs template
-    --}} <div class="site-header-content">
+{{!< default}} <div class="site-header-content">
     {{#if @site.cover_image}}
     {{!-- This is a responsive image, it loads different sizes depending on device
     https://medium.freecodecamp.org/a-guide-to-responsive-images-with-ready-to-use-templates-c400bd65c433 --}}
@@ -16,61 +15,106 @@
     </h1>
     <p>{{@site.description}}</p>
     {{!-- <div class="frosted-glass" style="
-            background-color: white;
-            width: 384px;
-            height: 100%;
-            z-index: 101;
-            align-self: flex-start;
-            border-radius: 8px;
-        ">
+                background-color: white;
+                width: 384px;
+                height: 100%;
+                z-index: 101;
+                align-self: flex-start;
+                border-radius: 8px;
+            ">
 
     </div> --}}
     </div>
 
     {{!-- The main content area --}}
-    <main id="site-main" class="site-main outer" style="width: 100%;">
+    <main id="site-main" class="site-main outer" style="width: 100%; overflow:">
 
         <!-- Presentation sections -->
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-6">
-                    <h1>Ce este polihack?</h1>
-                    <p class="description-text">Lorem Ipsum is simply dummy text of the printing and typesetting
-                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                        unknown printer took a galley of type and scrambled it to make a type specimen book. It has
-                        survived not only five centuries, but also the leap into electronic typesetting, remaining
-                        essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
-                        containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
-                        PageMaker including versions of Lorem Ipsum.</p>
+        <div class="py-5" style="
+                background-color: var(--bs-gray-100);
+                color: var(--bs-gray-100);
+            ">
+            <div class="container" style="
+                    background-color: var(--bs-gray-100);
+                    color: var(--bs-gray-900);
+                    ">
+                <div class="row">
+                    <div class="pt-0 pt-md-5 col-sm-12 col-md-6 d-flex flex-column p-5">
+                        <div class="pt-0 pt-md-5 p-5" style="
+                                color: var(--bs-gray-900);
+                                border-radius: 16px;
+                            ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor"
+                                class="bi bi-lightbulb align-self-start mb-5" viewBox="0 0 16 16">
+                                <path
+                                    d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z" />
+                            </svg>
+                            <p class="fs-2 fw-bold">
+                                Dacă ai o minte strălucită și te simți pregătit să faci primii pași în antreprenoriat,
+                                atunci te așteptăm la hackathon-ul nostru!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 d-flex flex-column">
+                        <div class="p-5 special-shadow move-up-on-hover" style="
+                                background-color: var(--bs-gray-100);
+                                color: var(--bs-gray-900);
+                                border-radius: 16px;
+                                background-image: url('/content/images/ph2.webp');
+                                background-size: cover;
+                                background-repeat: no-repeat;
+                                width: 500px;
+                                height: 250px;
+                            ">
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-12 col-md-6" style="display:flex; justify-content: center; align-items; center">
-                    <img src="/content/images/background_ph.png" width="300" />
-                </div>
-            </div>
 
-            <div class="row">
-                <div class="col-sm-12 col-md-6" style="display:flex; justify-content: center; align-items; center">
-                    <img src="/content/images/background_ph.png" width="300" />
-                </div>
-                <div class="col-sm-12 col-md-6">
-                    <h1>De ce sa participi?</h1>
-                    <p class="description-text">Lorem Ipsum is simply dummy text of the printing and typesetting
-                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                        unknown printer took a galley of type and scrambled it to make a type specimen book. It has
-                        survived not only five centuries, but also the leap into electronic typesetting, remaining
-                        essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
-                        containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
-                        PageMaker including versions of Lorem Ipsum.</p>
+                <div class="row flex-column-reverse flex-md-row mt-n5 mt-md-0">
+                    <div class="col-sm-12 col-md-6 d-flex justify-content-center align-items-center flex-column">
+                        <div class="p-5 special-shadow move-up-on-hover" style="
+                                background-color: var(--bs-gray-100);
+                                color: var(--bs-gray-900);
+                                border-radius: 16px;
+                                background-image: url('/content/images/ph3.webp');
+                                background-size: cover;
+                                background-repeat: no-repeat;
+                                width: 500px;
+                                height: 250px;
+                            ">
+                        </div>
+                    </div>
+                    <div class="pt-0 pt-md-5 col-sm-12 col-md-6 d-flex justify-content-center align-items-center flex-column p-5">
+                        <div class="pt-0 pt-md-5 p-5" style="
+                                color: var(--bs-gray-900);
+                                border-radius: 16px;
+                            ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor"
+                                class="bi bi-eyeglasses align-self-start mb-5" viewBox="0 0 16 16">
+                                <path
+                                    d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zm2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A1.993 1.993 0 0 0 8 6c-.532 0-1.016.208-1.375.547zM14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" />
+                            </svg>
+                            <p class="fs-2 fw-bold">
+                                Polihack are ca scop să adune studenți și liceeni de pretutindeni ce au un singur lucru
+                                în comun: să aducă inovație prin ideile lor.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="red-background">
+        <div class="py-5" style="
+                background-color: var(--bs-gray-100);
+                border-top: 1px solid var(--bs-gray-500);
+                border-bottom: 1px solid var(--bs-gray-500);
+            ">
             {{!-- <div class="red-background-overlay"></div> --}}
-            <div class="container">
-                <div class="row">
+            <div class="container" style="background-color: var(--bs-gray-100);">
+                <div class="row align-items-start">
                     <div>
-                        <h1 style="text-align: center; color: white; margin-bottom: 3vw;">La ce categorii te poti
-                            inscrie?</h1>
+                        <h1 style="text-align: center; color: var(--bs-gray-900); margin-bottom: 3vw;">
+                            La ce categorii te poți înscrie?
+                        </h1>
                     </div>
 
                     <!--CARD 1 -->
@@ -84,12 +128,10 @@
                                 </svg>
                             </div>
                             <div class="card-body">
-                                <h1 class="card-title">WEB</h1>
+                                <h1 class="card-title">Web</h1>
                                 <p class="card-text">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                    It has survived not only five centuries, but also the leap into electronic
+                                    Dacă îți place să creezi site-uri, aplicații web sau orice applet-uri ușor de
+                                    folosit în browser, atunci secțiunea Web este pentru tine!
                                 </p>
                             </div>
                         </div>
@@ -107,12 +149,11 @@
                                 </svg>
                             </div>
                             <div class="card-body">
-                                <h1 class="card-title">MOBILE</h1>
+                                <h1 class="card-title">AppDev</h1>
                                 <p class="card-text">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                    It has survived not only five centuries, but also the leap into electronic
+                                    Cu toții ne folosim de laptop și telefon mobil pe parcursul zilei, dar puțini
+                                    folosesc aplicații scrise de ei. Ai vrea să fii și tu unul din acești oameni?
+                                    Înscrie-te la secțiunea AppDev și arată-ne ce poate să realizeze echipa ta!
                                 </p>
                             </div>
                         </div>
@@ -129,12 +170,12 @@
                                 </svg>
                             </div>
                             <div class="card-body">
-                                <h1 class="card-title">EMBEDDED</h1>
+                                <h1 class="card-title">Embedded</h1>
                                 <p class="card-text">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                    It has survived not only five centuries, but also the leap into electronic
+                                    De la jucării pentru copii până la panouri solare și roboți cu inteligență
+                                    artificială, senzorii și motoarele s-au dovedit a fi unelte folositoare atât pentru
+                                    divertisment, cât și pentru cercetare științifică. Înscrie-te la secțiunea Embedded
+                                    și arată-ne cum ai folosi tu senzorii în viața ta.
                                 </p>
                             </div>
                         </div>
@@ -152,13 +193,10 @@
                                 </svg>
                             </div>
                             <div class="card-body">
-                                <h1 class="card-title">JUNIOR</h1>
+                                <h1 class="card-title">Junior</h1>
                                 <p class="card-text">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                    It has survived not only five centuries, but also the leap into electronic
-                                </p>
+                                    Încă nu ai ajuns la facultate? Nicio problemă! La secțiunea Junior poți concura
+                                    împotriva celor de vârsta ta, pentru a elimina avantajul nedrept.
                             </div>
                         </div>
                     </div>
@@ -168,7 +206,7 @@
         </div>
 
         <!-- SPONSORI -->
-        <div id="sponsors">
+        {{!-- <div id="sponsors">
             <h1 style="text-align: center; font-size: 3.6em">SPONSORI</h1>
             <div class="container">
                 <div class="row">
@@ -205,23 +243,18 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
 
-
-
-        <!--<div class="inner posts">
+        <div class="inner posts">
 
             <div class="post-feed">
-
-
-
                 {{#foreach posts}}
 
                 {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
-                {{ "post-card"}}
+                {{> "post-card"}}
 
                 {{/foreach}}
             </div>
 
-        </div> -->
+        </div>
     </main>
