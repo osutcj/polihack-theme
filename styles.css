@@ -1,0 +1,89 @@
+.description-text {
+    font-size: 16px;
+    color: black;
+}
+
+.row {
+    padding: 5%;
+}
+
+.container-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-style {
+    width: 18rem; 
+    border: none; 
+    background-color: #232A35 !important; 
+    padding: 5% 2%;
+    border-radius: 10% !important;
+}
+
+.card-title {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    margin-top: 2vh;
+}
+
+.card-text {
+    font-size: 18px;
+    /* text-align: justify; */
+    color: white;
+    text-align: center;
+}
+
+.card-body {
+    padding: 5% 0;
+}
+
+.red-background {
+    /* background-color: #a61419;  */
+    /* background-image: url("/content/images/background-cat.webp"); */
+    /* background-image: ur0l("/content/images/background-cat.webp")  ; */
+    background: linear-gradient(rgb(130,0,0,0.5), rgb(130,0,0,0.5)), url("/content/images/background-cat.webp");
+    width: 100%;
+    height: 100%;
+    min-height: 42vw;
+    background-position: bottom middle; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.red-background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.6;
+    /* background: rgba(130,0,0,.5); */
+  } 
+.outer {
+    padding: 0 !important;
+}
+
+.svg-background { 
+    background: linear-gradient(to bottom right,#000000,#b60303) !important;
+    border-radius: 50%;
+    padding: 10px;
+    color: white;
+}
+
+
+#sponsors {
+    margin: 3% 0;
+}
+
+.sponsors {
+    opacity: 100%;
+    transition-duration: 0.3s;
+}
+.sponsors:hover {
+    opacity: 50%;
+    transition-duration: 0.3s;
+}
