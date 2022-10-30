@@ -1,0 +1,65 @@
+@keyframes animation {
+  from {
+    opacity: 0;
+    transform: scale(1.2) rotateX(45deg);
+  }
+  to {
+  }
+}
+
+@keyframes animation2 {
+  from {
+    opacity: 0;
+    transform: scale(1.2) rotateX(45deg);
+  }
+  to {
+  }
+}
+
+.slider div p {
+  position: absolute;
+  bottom: -50px;
+}
+.slider {
+  animation: animation ease 1s;
+  animation-delay: 0.8s;
+  animation-fill-mode: backwards;
+
+  margin: 60px auto 0 auto;
+  height: 480px;
+  width: 360px;
+  padding: 40px;
+  top: 100px;
+
+  perspective: 1000px;
+  transition: ease-in-out 0.2s;
+}
+
+
+.slide img {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+}
+
+.slide {
+  position: absolute;
+  height: 480px;
+  width: 440px;
+  bottom: 35px;
+  left: auto;
+
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.3);
+  background: #fcfcfc;
+  transform-style: preserve-3d;
+  text-align: center;
+  border: 12px white solid;
+  box-sizing: border-box;
+  border-bottom: 55px white solid;
+  border-radius: 5px;
+  word-wrap: break-word;
+}
+.transition {
+  transition: cubic-bezier(0, 1.95, 0.49, 0.73) 0.4s;
+}
