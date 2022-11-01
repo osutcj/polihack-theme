@@ -1,3 +1,12 @@
+.auto-grid {
+  --auto-grid-min-size: 16rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+  grid-gap: 1rem;
+  grid-auto-rows: 1fr;
+}
+
 @keyframes animation {
   from {
     opacity: 0;
@@ -26,8 +35,8 @@
   animation-fill-mode: backwards;
 
   margin: 60px auto 0 auto;
-  height: 480px;
-  width: 360px;
+  height: 520px;
+  width: 520px;
   padding: 40px;
   top: 100px;
 
@@ -46,9 +55,9 @@
 .slide {
   position: absolute;
   height: 480px;
-  width: 440px;
+  width: 480px;
   bottom: 35px;
-  left: auto;
+  left: 17px;
 
   box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.3);
   background: #fcfcfc;
