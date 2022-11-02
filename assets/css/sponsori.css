@@ -3,16 +3,25 @@ body{
 }
 
 :root {
+    --font-size-title: 5rem;
+    --font-size-title-small: 2.5rem;
+    --font-size-title-smaller: 2.5rem;
+    --font-size-card: 4rem;
+    --font-size-card-small: 2rem;
+    --font-size-card-smaller: 2rem;
+
     --black: white;
     --white: black;
     --secondary: rgb(237, 28, 36);
     --secondary-transparent: rgba(237, 28, 35);
   }
 
-h1{
-    font-size: 100px;
+
+
+.title-sponsor{
+    font-size: var(--font-size-title);
     font-weight: 900;
-    letter-spacing: 10px;
+    letter-spacing: 3px;
 }
 
 .line {
@@ -50,8 +59,12 @@ h1{
     transition: 0.5s;
 }
 
+.card-bg:hover{
+    transform: scale(1.05);
+}
+
 .card-title{
-    font-size: 50px;  
+    font-size: var(--font-size-card);  
     color: var(--white);
     align-self: center;
     justify-self: center;
@@ -68,10 +81,9 @@ h1{
 }
 
 @media screen and (max-width: 950px) {
-    h1{
-        font-size: 50px;
+    .title-sponsor{
+        font-size: var(--font-size-title-small);
         font-weight: 900;
-        letter-spacing: 10px;
     }
 
     .card-category{
@@ -85,7 +97,7 @@ h1{
     }
     
     .card-title{
-        font-size: 40px;  
+        font-size: var(--font-size-card-small);  
     }
     
     .card-img{
@@ -97,10 +109,9 @@ h1{
 
 
 @media screen and (max-width: 600px) {
-    h1{
-        font-size: 30px;
+    .title-sponsor{
+        font-size: var(--font-size-title-smaller);
         font-weight: 900;
-        letter-spacing: 10px;
     }
 
     .card-category{
@@ -114,7 +125,7 @@ h1{
     }
     
     .card-title{
-        font-size: 30px;  
+        font-size: var(--font-size-card-smaller);  
     }
     
     .card-img{
