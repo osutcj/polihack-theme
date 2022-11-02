@@ -7,16 +7,7 @@
   grid-auto-rows: 1fr;
 }
 
-@keyframes animation {
-  from {
-    opacity: 0;
-    transform: scale(1.2) rotateX(45deg);
-  }
-  to {
-  }
-}
-
-@keyframes animation2 {
+@keyframes changeSlide {
   from {
     opacity: 0;
     transform: scale(1.2) rotateX(45deg);
@@ -30,7 +21,7 @@
   bottom: -50px;
 }
 .slider {
-  animation: animation ease 1s;
+  animation: changeSlide ease 1s;
   animation-delay: 0.8s;
   animation-fill-mode: backwards;
 
