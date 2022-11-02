@@ -12,3 +12,4 @@ var myIndex = 0;
     x[myIndex - 1].style.display = "block";
     setTimeout(carousel, 4000);
   }
+  
