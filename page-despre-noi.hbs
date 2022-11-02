@@ -1,0 +1,149 @@
+{{!< default}}
+
+{{!-- The tag above means: insert everything in this file
+into the {body} tag of the default.hbs template --}}
+
+
+{{#post}}
+{{!-- Everything inside the #post block pulls data from the page --}}
+
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100vw;
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    .card-grid {
+        margin-top: 3em;
+        --auto-grid-min-size: 300px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+        grid-gap: 2rem 0rem;
+        grid-auto-rows: 1fr;
+    }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+        width: 300px;
+        margin: auto;
+        text-align: center;
+        border-radius: 10px;
+        transition-duration: 400ms;
+        height: 100%;
+    }
+
+    .card img {
+        max-width: 300px;
+        width: 100%;
+        height: 225px;
+        object-fit: cover;
+        border-radius: 10px;
+        object-position: center;
+    }
+
+    .card .card-body {
+        text-align: center;
+        padding: 1em 2em;
+    }
+
+    .card .card-body h2 {
+        margin: 0 0 .5em;
+        font-weight: 700;
+        font-size: 2rem;
+    }
+
+    .card .card-body p.role {
+        color: #B50000;
+    }
+</style>
+
+<main id="site-main" class="site-main">
+    <article class="article {{post_class}}">
+
+        <header class="article-header gh-canvas">
+            {{#if feature_image}}
+            <figure class="article-image">
+                {{!-- This is a responsive image, it loads different sizes depending on device
+                https://medium.freecodecamp.org/a-guide-to-responsive-images-with-ready-to-use-templates-c400bd65c433 --}}
+                <img
+                    srcset="{{img_url feature_image size="s"}} 300w,
+                            {{img_url feature_image size="m"}} 600w,
+                            {{img_url feature_image size="l"}} 1000w,
+                            {{img_url feature_image size="xl"}} 2000w"
+                    sizes="(min-width: 1400px) 1400px, 92vw"
+                    src="{{img_url feature_image size="xl"}}"
+                    alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}"
+                />
+                {{#if feature_image_caption}}
+                    <figcaption>{{feature_image_caption}}</figcaption>
+                {{/if}}
+            </figure>
+            {{/if}}
+        </header>
+
+        <section class="container">
+
+            <h1 class="article-title">{{title}}</h1>
+
+            <div class="card-grid">
+                <div class="card">
+                    <img src="/content/images/tigauan.png" alt="Țigăuan Claudia">
+                    <div class="card-body">
+                        <h2>Țigăuan  <br> Claudia</h2>
+                        <p class="role">Responsabil BC</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/content/images/lazar.png" alt="Lazar Raul-Andrei">
+                    <div class="card-body">
+                        <h2>Lazar   <br> Raul-Andrei</h2>
+                        <p class="role">Coordonator</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/content/images/muresan.png" alt="Mureșan  Roberta Georgiana">
+                    <div class="card-body">
+                        <h2>Mureșan    <br> Roberta Georgiana</h2>
+                        <p class="role">Co-coordonator</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/content/images/moga.png" alt="Moga Riana">
+                    <div class="card-body">
+                        <h2>Moga    <br> Riana </h2>
+                        <p class="role">Co-coordonator</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/content/images/andrei.png" alt="Andrei  Nicolae">
+                    <div class="card-body">
+                        <h2>Andrei    <br> Nicolae</h2>
+                        <p class="role">Co-coordonator</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/content/images/sirca.png" alt="Sîrca  Florina">
+                    <div class="card-body">
+                        <h2>Sîrca    <br> Florentina</h2>
+                        <p class="role">Secretar</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/content/images/presecan.png" alt="Presecan Laurențiu">
+                    <div class="card-body">
+                        <h2>Presecan  <br> Laurențiu</h2>
+                        <p class="role">Responsabil PR</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </article>
+</main>
+
+{{/post}}
