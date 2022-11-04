@@ -297,6 +297,11 @@ production stylesheet in assets/built/screen.css
     width: 20px;
 }
 
+.gh-social-instagram svg{
+    height: 20px;
+    width: 20px;
+}
+
 a.gh-head-button {
     display: block;
     padding: 8px 15px;
