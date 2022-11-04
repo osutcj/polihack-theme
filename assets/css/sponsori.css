@@ -1,0 +1,136 @@
+body{
+    margin: 0;
+}
+
+:root {
+    --font-size-title: 5rem;
+    --font-size-title-small: 2.5rem;
+    --font-size-title-smaller: 2.5rem;
+    --font-size-card: 4rem;
+    --font-size-card-small: 2rem;
+    --font-size-card-smaller: 2rem;
+
+    --black: white;
+    --white: black;
+    --secondary: rgb(237, 28, 36);
+    --secondary-transparent: rgba(237, 28, 35);
+  }
+
+
+
+.title-sponsor{
+    font-size: var(--font-size-title);
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+.line {
+    color: var(--secondary);
+}
+
+
+.sponsori-content {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-category{
+    flex: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 25px;
+    margin-bottom: 200px;
+}
+
+.card-bg{
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+    width: 350px;
+    flex: 20%;
+    padding: 30px;
+    border-radius: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    transition: 0.5s;
+}
+
+.card-bg:hover{
+    transform: scale(1.05);
+}
+
+.card-title{
+    font-size: var(--font-size-card);  
+    color: var(--white);
+    align-self: center;
+    justify-self: center;
+}
+
+.card-img{
+    background-color: var(--secondary-transparent);
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 50px;
+    align-self: center;
+    justify-self: center;
+}
+
+@media screen and (max-width: 950px) {
+    .title-sponsor{
+        font-size: var(--font-size-title-small);
+        font-weight: 900;
+    }
+
+    .card-category{
+        margin-bottom: 100px;
+    }
+
+    .card-bg{
+        margin: 25px;
+        width: 300px;
+        padding: 30px;
+    }
+    
+    .card-title{
+        font-size: var(--font-size-card-small);  
+    }
+    
+    .card-img{
+        width: 200px;
+        height: 200px;
+        margin-bottom: 30px;
+    }
+} 
+
+
+@media screen and (max-width: 600px) {
+    .title-sponsor{
+        font-size: var(--font-size-title-smaller);
+        font-weight: 900;
+    }
+
+    .card-category{
+        margin-bottom: 100px;
+    }
+
+    .card-bg{
+        margin: 25px 70px 25px 70px;
+        width: 270px;
+        padding: 30px;
+    }
+    
+    .card-title{
+        font-size: var(--font-size-card-smaller);  
+    }
+    
+    .card-img{
+        width: 150px;
+        height: 150px;
+        margin-bottom: 30px;
+    }
+} 
