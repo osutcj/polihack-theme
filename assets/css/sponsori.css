@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
 }
 
@@ -6,7 +6,7 @@ body{
     --font-size-title: 5rem;
     --font-size-title-small: 2.5rem;
     --font-size-title-smaller: 2.5rem;
-    --font-size-card: 4rem;
+    --font-size-card: 3rem;
     --font-size-card-small: 2rem;
     --font-size-card-smaller: 2rem;
 
@@ -14,14 +14,30 @@ body{
     --white: black;
     --secondary: rgb(237, 28, 36);
     --secondary-transparent: rgba(237, 28, 35);
-  }
+}
 
 
 
-.title-sponsor{
+.title-sponsor {
     font-size: var(--font-size-title);
     font-weight: 900;
     letter-spacing: 3px;
+}
+
+.img-1 {
+    background-image: url("/content/images/alina.png");
+}
+
+.img-2 {
+    background-image: url("/content/images/andrei.png");
+}
+
+.img-3 {
+    background-image: url("/content/images/alina.png");
+}
+
+.img-4 {
+    background-image: url("/content/images/alina.png");
 }
 
 .line {
@@ -30,7 +46,8 @@ body{
 
 
 .sponsori-content {
-    width: 100%;
+    width: 80%;
+    margin: auto;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -38,99 +55,101 @@ body{
     justify-content: center;
 }
 
-.card-category{
+.card-category {
     flex: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 25px;
     margin-bottom: 200px;
 }
 
-.card-bg{
+.card-bg {
     display: flex;
     flex-direction: column;
     margin: 25px;
-    width: 350px;
-    flex: 20%;
+    width: 300px;
+
     padding: 30px;
     border-radius: 3rem;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     transition: 0.5s;
 }
 
-.card-bg:hover{
+.card-bg:hover {
     transform: scale(1.05);
 }
 
-.card-title{
-    font-size: var(--font-size-card);  
+.card-title {
+    font-size: var(--font-size-card);
     color: var(--white);
     align-self: center;
     justify-self: center;
 }
 
-.card-img{
+.card-img {
     background-color: var(--secondary-transparent);
+    background-size: cover;
     border-radius: 50%;
-    width: 250px;
-    height: 250px;
+    width: 225px;
+    height: 225px;
     margin-bottom: 50px;
     align-self: center;
     justify-self: center;
+    background-position: center;
 }
 
 @media screen and (max-width: 950px) {
-    .title-sponsor{
+    .title-sponsor {
         font-size: var(--font-size-title-small);
         font-weight: 900;
     }
 
-    .card-category{
+    .card-category {
         margin-bottom: 100px;
     }
 
-    .card-bg{
-        margin: 25px;
+    .card-bg {
+        margin: 20px auto;
         width: 300px;
         padding: 30px;
     }
-    
-    .card-title{
-        font-size: var(--font-size-card-small);  
+
+    .card-title {
+        font-size: var(--font-size-card-small);
     }
-    
-    .card-img{
+
+    .card-img {
         width: 200px;
         height: 200px;
         margin-bottom: 30px;
     }
-} 
+}
 
 
 @media screen and (max-width: 600px) {
-    .title-sponsor{
+    .title-sponsor {
         font-size: var(--font-size-title-smaller);
         font-weight: 900;
     }
 
-    .card-category{
+    .card-category {
         margin-bottom: 100px;
     }
 
-    .card-bg{
-        margin: 25px 70px 25px 70px;
+    .card-bg {
+        margin: 20px auto;
         width: 270px;
         padding: 30px;
     }
-    
-    .card-title{
-        font-size: var(--font-size-card-smaller);  
+
+    .card-title {
+        font-size: var(--font-size-card-smaller);
     }
-    
-    .card-img{
+
+    .card-img {
         width: 150px;
         height: 150px;
         margin-bottom: 30px;
     }
-} 
+}

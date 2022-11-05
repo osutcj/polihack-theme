@@ -1,65 +1,89 @@
-.auto-grid {
-  --auto-grid-min-size: 16rem;
-
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
-  grid-gap: 1rem;
-  grid-auto-rows: 1fr;
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #fff;
+  height: 250px;
 }
 
-@keyframes changeSlide {
-  from {
-    opacity: 0;
-    transform: scale(1.2) rotateX(45deg);
-  }
-  to {
-  }
+.testimonials-container {
+  max-width: 80%;
+  margin: auto;
 }
 
-.slider div p {
-  position: absolute;
-  bottom: -50px;
-}
-.slider {
-  animation: changeSlide ease 1s;
-  animation-delay: 0.8s;
-  animation-fill-mode: backwards;
-
-  margin: 60px auto 0 auto;
-  height: 520px;
-  width: 520px;
-  padding: 40px;
-  top: 100px;
-
-  perspective: 1000px;
-  transition: ease-in-out 0.2s;
-}
-
-
-.slide img {
+/* Slides */
+.testimonials-slide {
+  display: none;
+  padding: 80px;
   text-align: center;
-  width: 100%;
-  height: 100%;
-  border-radius: 2px;
 }
 
-.slide {
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
   position: absolute;
-  height: 480px;
-  width: 480px;
-  bottom: 35px;
-  left: 17px;
-
-  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.3);
-  background: #fcfcfc;
-  transform-style: preserve-3d;
-  text-align: center;
-  border: 12px white solid;
-  box-sizing: border-box;
-  border-bottom: 55px white solid;
-  border-radius: 5px;
-  word-wrap: break-word;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
-.transition {
-  transition: cubic-bezier(0, 1.95, 0.49, 0.73) 0.4s;
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  /* background-color: rgba(0, 0, 0, 0.8); */
+  color: #000;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active,
+.dot:hover {
+  background-color: #000;
+}
+
+/* Add an italic font style to all quotes */
+q {
+  font-style: italic;
+}
+
+/* Add a blue color to the author */
+.author {
+  color: cornflowerblue;
+}
+
+@media screen and (max-width: 767px) {
+  .testimonials-container {
+    max-width: 100%;
+  }
 }

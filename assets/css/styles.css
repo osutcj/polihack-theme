@@ -14,9 +14,9 @@
 }
 
 .card-style {
-    width: 18rem; 
-    border: none; 
-    background-color: #232A35 !important; 
+    width: 18rem;
+    border: none;
+    background-color: #232A35 !important;
     padding: 5% 2%;
     border-radius: 10% !important;
 }
@@ -44,11 +44,11 @@
     /* background-color: #a61419;  */
     /* background-image: url("/content/images/background-cat.webp"); */
     /* background-image: ur0l("/content/images/background-cat.webp")  ; */
-    background: linear-gradient(rgb(130,0,0,0.5), rgb(130,0,0,0.5)), url("/content/images/background-cat.webp");
+    background: linear-gradient(rgb(130, 0, 0, 0.5), rgb(130, 0, 0, 0.5)), url("/content/images/background-cat.webp");
     width: 100%;
     height: 100%;
     min-height: 42vw;
-    background-position: bottom middle; 
+    background-position: bottom middle;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -62,15 +62,16 @@
     background-color: black;
     opacity: 0.6;
     /* background: rgba(130,0,0,.5); */
-  } 
+}
+
 .outer {
     padding: 0 !important;
 }
 
-.svg-background { 
+.svg-background {
     background: #ed1c24;
     border-radius: 50%;
-    padding: 10px;
+    padding: 5px;
     color: white;
 }
 
@@ -83,6 +84,7 @@
     opacity: 100%;
     transition-duration: 0.3s;
 }
+
 .sponsors:hover {
     opacity: 50%;
     transition-duration: 0.3s;
