@@ -1,22 +1,36 @@
-<link rel="stylesheet" href="../assets/css/carousel-testimonials.css">
+<link rel="stylesheet" href="{{asset 'css/carousel-testimonials.css'}}" />
+<div class="testimonials-container">
+  <div class="slideshow-container">
 
-<div class="slider auto-grid">
-    <div class="slide">
-        <img src="../assets/images/circle-2.jpg" />
-        <p>as dsa asd as da a sfaf ssaf af af asf af sdf sa fsa fasfd ad fad f sad fsafd </p>
+    <!-- Full-width slides/quotes -->
+    <div class="testimonials-slide">
+      <q>I love you the more in that I believe you had liked me for my own sake
+        and for nothing else</q>
+      <p class="author">- John Keats</p>
     </div>
-    <div class="slide">
-        <img src="../assets/images/images.jpg" />
-        <p>litora torquent per conubia</p>
+
+    <div class="testimonials-slide">
+      <q>But man is not made for defeat. A man can be destroyed but not
+        defeated.</q>
+      <p class="author">- Ernest Hemingway</p>
     </div>
-    <div class="slide">
-        <img src="../assets/images/circle-2.jpg" />
-        <p>sed consectetur faucibus</p>
+
+    <div class="testimonials-slide">
+      <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+      <p class="author">- Thomas A. Edison</p>
     </div>
-    <div class="slide">
-        <img src="../assets/images/images.jpg" />
-        <p>eleifend tempus justo</p>
-    </div>
+
+    <!-- Next/prev buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+  <!-- Dots/bullets/indicators -->
+  <div class="dot-container">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
 </div>
 
-<script src="../assets/js/carousel-testimonials.js"></script>
+<script src="{{asset 'js/testimonials-carousel.js'}}"></script>

@@ -1,9 +1,9 @@
-<link rel="stylesheet" type="text/css" href="{{asset "assets/css1/file.css"}}" />
+<link rel="stylesheet" type="text/css" href="{{asset " assets/css1/file.css"}}" />
 {{!< default}} <div class="site-header-content">
     {{#if @site.cover_image}}
     {{!-- This is a responsive image, it loads different sizes depending on device
     https://medium.freecodecamp.org/a-guide-to-responsive-images-with-ready-to-use-templates-c400bd65c433 --}}
-    <img class="site-header-cover" srcset="{{img_url @site.cover_image size=" s"}} 300w, {{img_url @site.cover_image
+    <img class="site-header-cover" style="position: fixed" srcset="{{img_url @site.cover_image size=" s"}} 300w, {{img_url @site.cover_image
         size="m" }} 600w, {{img_url @site.cover_image size="l" }} 1000w, {{img_url @site.cover_image size="xl" }} 2000w"
         sizes="100vw" src="{{img_url @site.cover_image size=" xl"}}" alt="" />
     {{/if}}
@@ -14,21 +14,11 @@
         {{@site.title}}
         {{/if}}
     </h1>
-    <p>{{@site.description}}</p>
-    {{!-- <div class="frosted-glass" style="
-                background-color: white;
-                width: 384px;
-                height: 100%;
-                z-index: 101;
-                align-self: flex-start;
-                border-radius: 8px;
-            ">
-
-    </div> --}}
+    <p style="color: white; opacity: .99">{{@site.description}}</p>
+    <p style="color: white; opacity: .99">9 - 11 Decembrie</p>
     </div>
 
-    {{!-- The main content area --}}
-    <main id="site-main" class="site-main outer" style="width: 100%; overflow:">
+    <main id="site-main" style="z-index: 200; background-color: white;" class="site-main outer" style="width: 100%; overflow:">
 
         <!-- Presentation sections -->
         <div class="py-5" style="
@@ -87,7 +77,8 @@
                             ">
                         </div>
                     </div>
-                    <div class="pt-0 pt-md-5 col-sm-12 col-md-6 d-flex justify-content-center align-items-center flex-column p-5">
+                    <div
+                        class="pt-0 pt-md-5 col-sm-12 col-md-6 d-flex justify-content-center align-items-center flex-column p-5">
                         <div class="pt-0 pt-md-5 p-5" style="
                                 color: var(--bs-gray-900);
                                 border-radius: 16px;
@@ -111,7 +102,6 @@
                 border-top: 1px solid var(--bs-gray-500);
                 border-bottom: 1px solid var(--bs-gray-500);
             ">
-            {{!-- <div class="red-background-overlay"></div> --}}
             <div class="container" style="background-color: var(--bs-gray-100);">
                 <div class="row align-items-start">
                     <div>
@@ -252,7 +242,7 @@
                 Ce parere au avut participantii?
             </h1>
             {{>carousel-testimonials}}
-        </div>       
+        </div>
         <div style="border-bottom: 1px solid var(--bs-gray-500);">
             <div class="inner posts">
                 <div class="post-feed">
@@ -265,22 +255,18 @@
                 </div>
             </div>
         </div>
-        
-        <div>
-            <h1 style="text-align: center; color: var(--bs-gray-900); margin-top: 3vw;">
-                Imagini de la editiile trecute
-            </h1>
-            {{>carousel-images}}
-        </div> 
+
+
+        <div style="padding-bottom: 40px;">
+            <div class="custom-map">
+                <center>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2732.087941493188!2d23.605760115602102!3d46.78287147913863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47490c1cf36e29af%3A0xca220d2ddd6625ea!2sCluj%20Business%20Campus!5e0!3m2!1sro!2sro!4v1667338016320!5m2!1sro!2sro"
+                        width="80%" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                        tabindex="0"></iframe>
+                </center>
+            </div>
+        </div>
+
+
     </main>
-    
-    
-    <div class = "custom-map">
-        <center>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2732.087941493188!2d23.605760115602102!3d46.78287147913863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47490c1cf36e29af%3A0xca220d2ddd6625ea!2sCluj%20Business%20Campus!5e0!3m2!1sro!2sro!4v1667338016320!5m2!1sro!2sro"
-            width="80%" height="600" frameborder="0" style="border:0;" 
-            allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        </center>
-    </div>
-     
-</main>
