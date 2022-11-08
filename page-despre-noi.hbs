@@ -1,5 +1,8 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 {{!< default}} {{!-- The tag above means: insert everything in this file into the {body} tag of the default.hbs template
-    --}} {{#post}} {{!-- Everything inside the #post block pulls data from the page --}} <style>
+    --}} {{#post}} {{!-- Everything inside the #post block pulls data from the page --}} 
+    
+    <style>
     .container {
     display: flex;
     flex-direction: column;
@@ -49,7 +52,11 @@
     }
 
     .card .card-body p.role {
-    color: #B50000;
+        color: #B50000;
+    }
+
+    .icon:hover {
+        color: #B50000;
     }
     </style>
 
@@ -82,7 +89,6 @@
 
                 <div>
                     <p>Acest proiect are ca scop promovarea minților sclipitoare și talentului în
-dezvoltarea deare ca scop promovarea minților sclipitoare și talentului în
 dezvoltarea de aplicații inovative. Astfel, pe durata unui weekend, echipe
 formate atât din studenți, cât și liceeni potlua parte la această competiție
 de programare, în care cea mai inovatoare idee și implementare este
@@ -101,10 +107,8 @@ PoliHack este o rampă de lansare în zona tech.</p>
                         <div class="card-body">
                             <h2>Țigăuan <br> Claudia</h2>
                             <p class="role">Responsabil BC</p>
-                            <div style="display: flex; justify-content: center; color: red">
-                                <div style="width: 15px">
-                                    <p style="color: red;">{{>"icons/web"}}</p>
-                                </div>
+                            <div>
+                                <a class="icon" href="mailto:ctigauan@gmail.com"><i class="fa fa-envelope"></i></a>
                             </div>
                         </div>
                     </div>
@@ -113,6 +117,9 @@ PoliHack este o rampă de lansare în zona tech.</p>
                         <div class="card-body">
                             <h2>Lazar <br> Raul-Andrei</h2>
                             <p class="role">Coordonator</p>
+                            <div>
+                                <a class="icon" href="mailto:raullazar23@gmail.com"><i class="fa fa-envelope"></i></a>
+                            </div>
                         </div>
                     </div>
                     <div class="card">
@@ -120,6 +127,9 @@ PoliHack este o rampă de lansare în zona tech.</p>
                         <div class="card-body">
                             <h2>Mureșan <br> Roberta Georgiana</h2>
                             <p class="role">Co-coordonator</p>
+                            <div>
+                                <a class="icon" href="mailto:roberta.muresan93@gmail.com"><i class="fa fa-envelope"></i></a>
+                            </div>
                         </div>
                     </div>
                     <div class="card">
@@ -127,6 +137,9 @@ PoliHack este o rampă de lansare în zona tech.</p>
                         <div class="card-body">
                             <h2>Moga <br> Riana </h2>
                             <p class="role">Co-coordonator</p>
+                            <div>
+                                <a class="icon" href="mailto:riaruxi@gmail.com"><i class="fa fa-envelope"></i></a>
+                            </div>
                         </div>
                     </div>
                     <div class="card">
@@ -134,6 +147,9 @@ PoliHack este o rampă de lansare în zona tech.</p>
                         <div class="card-body">
                             <h2>Andrei <br> Nicolae</h2>
                             <p class="role">Co-coordonator</p>
+                            <div>
+                                <a class="icon" href="mailto:n.andrei002@gmail.com"><i class="fa fa-envelope"></i></a>
+                            </div>
                         </div>
                     </div>
                     <div class="card">
@@ -141,6 +157,9 @@ PoliHack este o rampă de lansare în zona tech.</p>
                         <div class="card-body">
                             <h2>Sîrca <br> Florentina</h2>
                             <p class="role">Secretar</p>
+                            <div>
+                                <a class="icon" href="mailto:florentinasirca3@gmail.com"><i class="fa fa-envelope"></i></a>
+                            </div>
                         </div>
                     </div>
                     <div class="card">
@@ -148,6 +167,9 @@ PoliHack este o rampă de lansare în zona tech.</p>
                         <div class="card-body">
                             <h2>Presecan <br> Laurențiu</h2>
                             <p class="role">Responsabil PR</p>
+                            <div>
+                                <a class="icon" href="mailto:preselau@gmail.com"><i class="fa fa-envelope"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
