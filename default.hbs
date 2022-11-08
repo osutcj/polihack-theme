@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     {{!-- Theme assets - use the {asset} helper to reference styles & scripts,
     this will take care of caching and cache-busting automatically --}}
@@ -44,14 +45,18 @@
                 {{navigation}}
             </div>
             <div class="gh-head-actions">
-                <div class="gh-social">
+                <div class="gh-social" style="display: flex; justify-content: center; align-items: center;">
                     {{#if @site.facebook}}
-                        <a class="gh-social-facebook" href="{{facebook_url @site.facebook}}" title="Facebook" target="_blank" rel="noopener">{{> "icons/facebook"}}</a>
+                        <a class="gh-social-facebook" href="{{facebook_url @site.facebook}}" title="Facebook" target="_blank" rel="noopener">
+                            <i class="fa fa-facebook" style="border: 3px solid white; border-radius: 50px; padding-top: 3px; padding-bottom: 1px; padding-right: 6px; padding-left: 5px; "></i>
+                        </a>
                     {{/if}}
                     {{#if @site.twitter}}
                         <a class="gh-social-twitter" href="{{twitter_url @site.twitter}}" title="Twitter" target="_blank" rel="noopener">{{> "icons/twitter"}}</a>
                     {{/if}}
-                    <a class="gh-social-instagram" href="https://www.instagram.com/polihack.osut/" title="Instagram" target="_blank">{{> "icons/instagram"}}</a>
+                    <a class="gh-social-instagram" href="https://www.instagram.com/polihack.osut/" title="Instagram" target="_blank">
+                        <i class="fa fa-instagram" style="font-size: 30px;"></i>
+                    </a>
                 </div>
 
                 <div class="dropdown" >
@@ -61,7 +66,7 @@
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="font-size: 16px; min-width: 15rem;">
                         <li style="padding-left: 0;"><a class="dropdown-item" target="_blank" href="https://forms.gle/C6whxBBay1iXtNov8">Student</a></li>
                         <li style="padding-left: 0;"><a class="dropdown-item" target="_blank" href="https://forms.gle/mTSgW73qcvEjCFdP9">Junior</a></li>
-                        <li style="padding-left: 0;"><a class="dropdown-item" target="_blank" href="https://forms.gle/LbRmL9tkba8sdiFg9">Lista de asteptare</a></li>
+                        <li style="padding-left: 0;"><a class="dropdown-item" target="_blank" href="https://www.facebook.com/groups/437153071936490/?ref=share">Matchmaking</a></li>
                     </ul>
                 </div>
 
