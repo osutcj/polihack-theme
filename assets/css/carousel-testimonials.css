@@ -2,7 +2,6 @@
 .slideshow-container {
   position: relative;
   background: #fff;
-  height: 310px;
 }
 
 .testimonials-container {
@@ -13,8 +12,7 @@
 /* Slides */
 .testimonials-slide {
   display: none;
-  padding: 10px;
-  padding-bottom: 40px;
+  padding: 20px 50px;
   text-align: center;
 }
 
@@ -26,7 +24,7 @@
   top: 50%;
   width: auto;
   margin-top: -30px;
-  padding: 16px;
+  padding: 10px;
   color: #000;
   font-weight: bold;
   font-size: 20px;
@@ -83,18 +81,20 @@ q {
   color: cornflowerblue;
   font-weight: bold;
 }
-.position{
+
+.position {
   font-style: italic;
   color: cornflowerblue;
 }
-.pozaa{
+
+.pozaa {
   margin: auto;
   width: 200px;
   height: 200px;
   border-radius: 50%;
 }
 
-.image-container{
+.image-container {
   margin-bottom: 10px;
 }
 
