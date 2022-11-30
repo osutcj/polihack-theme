@@ -9,21 +9,143 @@ body{
     --font-size-card: 4rem;
     --font-size-card-small: 2rem;
     --font-size-card-smaller: 2rem;
-
     --black: white;
     --white: black;
     --secondary: rgb(237, 28, 36);
     --secondary-transparent: rgba(237, 28, 35);
   }
 
+.img-1{
+    background-image: url("../images/sponsori/platinum/1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 
+<<<<<<< Updated upstream
 .title-sponsor{
     font-size: var(--font-size-title);
     font-weight: 900;
     letter-spacing: 3px;
 }
 
+=======
+.img-2{
+    background-image: url("../images/sponsori/platinum/2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.img-3{
+    background-image: url("../images/sponsori/platinum/3.svg");
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img-4{
+    background-image: url("../images/sponsori/platinum/4.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img-5{
+    background-image: url("../images/sponsori/platinum/5.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img-6{
+    background-image: url("../images/sponsori/gold/1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.img-7{
+    background-image: url("../images/sponsori/silver/1.png");
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img-8{
+    background-image: url("../images/sponsori/silver/2.png");
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.img-9{
+    background-image: url("../images/sponsori/silver/3.png");
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img-10{
+    background-image: url("../images/sponsori/silver/4.png");
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.img-11{
+    background-image: url("../images/sponsori/bronze/1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img-12{
+    background-image: url("../images/sponsori/bronze/2.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.img-13{
+    background-image: url("../images/sponsori/bronze/3.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img-14{
+    background-image: url("../images/sponsori/bronze/4.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img-15{
+    background-image: url("../images/sponsori/bronze/5.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.img-14{
+
+}
+
+.title-sponsor {
+    font-size: var(--font-size-title);
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+>>>>>>> Stashed changes
 .line {
     color: var(--secondary);
 }
@@ -51,8 +173,12 @@ body{
     display: flex;
     flex-direction: column;
     margin: 25px;
+<<<<<<< Updated upstream
     width: 350px;
     flex: 20%;
+=======
+    width: 250px;
+>>>>>>> Stashed changes
     padding: 30px;
     border-radius: 3rem;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -70,12 +196,19 @@ body{
     justify-self: center;
 }
 
+<<<<<<< Updated upstream
 .card-img{
     background-color: var(--secondary-transparent);
     border-radius: 50%;
     width: 250px;
     height: 250px;
     margin-bottom: 50px;
+=======
+.card-img {
+    border-radius: 50%;
+    width: 225px;
+    height: 225px;
+>>>>>>> Stashed changes
     align-self: center;
     justify-self: center;
 }
