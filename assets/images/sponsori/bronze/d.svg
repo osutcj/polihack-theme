@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 57.45 11.85"
+   version="1.1"
+   id="svg4010"
+   sodipodi:docname="black.svg"
+   inkscape:version="1.2.1 (9c6d41e, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview4012"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="22.489121"
+     inkscape:cx="20.187539"
+     inkscape:cy="5.9584366"
+     inkscape:window-width="1920"
+     inkscape:window-height="1022"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer_1-2" />
+  <defs
+     id="defs3986">
+    <style
+       id="style3984">.cls-1{fill:#231b1b;}.cls-2{fill:#ffc90e;}</style>
+  </defs>
+  <title
+     id="title3988">Asset 4</title>
+  <g
+     id="Layer_2"
+     data-name="Layer 2">
+    <g
+       id="Layer_1-2"
+       data-name="Layer 1">
+      <rect
+         class="cls-1"
+         width="57.45"
+         height="11.85"
+         id="rect3990"
+         style="fill:#1b1c23;fill-opacity:1" />
+      <path
+         class="cls-2"
+         d="M4.29,3.45A.85.85,0,0,1,5.07,4,3.18,3.18,0,0,1,6.6,3.55,3.08,3.08,0,0,1,9.67,6.62v2.3a.77.77,0,0,1-1.54,0V6.62a1.54,1.54,0,0,0-3.07,0v2.3a.78.78,0,0,1-.77.77.77.77,0,0,1-.76-.77V6.62a3,3,0,0,1,.4-1.51.88.88,0,0,1-.5-.79A.86.86,0,0,1,4.29,3.45Z"
+         id="path3992" />
+      <path
+         class="cls-2"
+         d="M13.52,3.55a3.08,3.08,0,0,1,3.07,3.07,3,3,0,0,1-.41,1.52.86.86,0,0,1-.36,1.65A.9.9,0,0,1,15,9.28a2.87,2.87,0,0,1-1.51.41,3.07,3.07,0,0,1,0-6.14Zm0,4.61A1.54,1.54,0,1,0,12,6.62,1.54,1.54,0,0,0,13.52,8.16Z"
+         id="path3994" />
+      <path
+         class="cls-2"
+         d="M18.53,3.45a.87.87,0,0,1,.78.51,3.14,3.14,0,0,1,1.52-.41A3.08,3.08,0,0,1,23.9,6.62v2.3a.77.77,0,0,1-1.54,0V6.62a1.54,1.54,0,0,0-3.07,0v2.3a.77.77,0,1,1-1.53,0V6.62a2.87,2.87,0,0,1,.41-1.51.89.89,0,0,1-.51-.79A.87.87,0,0,1,18.53,3.45Z"
+         id="path3996" />
+      <path
+         class="cls-2"
+         d="M27.75,3.55a3.07,3.07,0,1,1-3.07,3.07A3.08,3.08,0,0,1,27.75,3.55Zm0,4.61a1.54,1.54,0,1,0,0-3.07,1.54,1.54,0,0,0,0,3.07Z"
+         id="path3998" />
+      <path
+         class="cls-2"
+         d="M33.33,8.92a.77.77,0,1,1-1.53,0V2a.77.77,0,0,1,1.53,0Z"
+         id="path4000" />
+      <path
+         class="cls-2"
+         d="M37.38,3.55a3.08,3.08,0,0,1,3.07,3.07A3.14,3.14,0,0,1,40,8.14a.87.87,0,0,1-.36,1.65.87.87,0,0,1-.79-.51,2.9,2.9,0,0,1-1.51.41,3.07,3.07,0,0,1,0-6.14Zm0,4.61a1.54,1.54,0,1,0-1.54-1.54A1.53,1.53,0,0,0,37.38,8.16Z"
+         id="path4002" />
+      <path
+         class="cls-2"
+         d="M41.61,2a.77.77,0,0,1,1.54,0V4a3,3,0,0,1,1.53-.42,3.07,3.07,0,1,1,0,6.14,2.94,2.94,0,0,1-1.53-.41.85.85,0,0,1-.78.51A.87.87,0,0,1,42,8.13a3.06,3.06,0,0,1-.4-1.51Zm3.07,6.15a1.54,1.54,0,1,0,0-3.07,1.54,1.54,0,0,0,0,3.07Z"
+         id="path4004" />
+      <path
+         class="cls-2"
+         d="M52,8.16a.39.39,0,1,0,0-.77H50.46a1.92,1.92,0,0,1,0-3.84h2.3a.77.77,0,0,1,0,1.54h-2.3a.38.38,0,0,0-.39.38.38.38,0,0,0,.39.38H52a1.92,1.92,0,0,1,0,3.84H49.31a.78.78,0,0,1-.77-.77.77.77,0,0,1,.77-.76Z"
+         id="path4006" />
+    </g>
+  </g>
+</svg>
