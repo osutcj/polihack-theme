@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
 }
 
@@ -13,9 +13,9 @@ body{
     --white: black;
     --secondary: rgb(237, 28, 36);
     --secondary-transparent: rgba(237, 28, 35);
-  }
+}
 
-.img-1{
+.img-1 {
     background-image: url("../images/sponsori/platinum/a.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -23,7 +23,7 @@ body{
 }
 
 
-.img-2{
+.img-2 {
     background-image: url("../images/sponsori/platinum/b.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -31,28 +31,28 @@ body{
 }
 
 
-.img-3{
+.img-3 {
     background-image: url("../images/sponsori/platinum/c.svg");
     background-size: 60%;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.img-4{
+.img-4 {
     background-image: url("../images/sponsori/platinum/d.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.img-5{
+.img-5 {
     background-image: url("../images/sponsori/platinum/e.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.img-6{
+.img-6 {
     background-image: url("../images/sponsori/gold/a.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -60,14 +60,14 @@ body{
 }
 
 
-.img-7{
+.img-7 {
     background-image: url("../images/sponsori/silver/a.png");
     background-size: 70%;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.img-8{
+.img-8 {
     background-image: url("../images/sponsori/silver/b.png");
     background-size: 70%;
     background-repeat: no-repeat;
@@ -75,14 +75,14 @@ body{
 }
 
 
-.img-9{
+.img-9 {
     background-image: url("../images/sponsori/silver/c.png");
     background-size: 60%;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.img-10{
+.img-10 {
     background-image: url("../images/sponsori/silver/d.png");
     background-size: 70%;
     background-repeat: no-repeat;
@@ -90,14 +90,14 @@ body{
 }
 
 
-.img-11{
+.img-11 {
     background-image: url("../images/sponsori/bronze/b.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.img-12{
+.img-12 {
     background-image: url("../images/sponsori/bronze/a.svg");
     background-size: contain;
     background-repeat: no-repeat;
@@ -105,64 +105,70 @@ body{
 }
 
 
-.img-13{
+.img-13 {
     background-image: url("../images/sponsori/bronze/c.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.img-14{
+.img-14 {
     background-image: url("../images/sponsori/bronze/d.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.img-15{
+.img-15 {
     background-image: url("../images/sponsori/bronze/e.png");
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.img-16{
+.img-16 {
     background-image: url("../images/sponsori/parteneri/a.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
-.img-17{
+
+.img-17 {
     background-image: url("../images/sponsori/parteneri/b.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
-.img-18{
+
+.img-18 {
     background-image: url("../images/sponsori/parteneri/c.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
-.img-19{
+
+.img-19 {
     background-image: url("../images/sponsori/parteneri/d.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
-.img-20{
+
+.img-20 {
     background-image: url("../images/sponsori/parteneri/e.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
-.img-21{
+
+.img-21 {
     background-image: url("../images/sponsori/parteneri/f.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
-.img-22{
+
+.img-22 {
     background-image: url("../images/sponsori/parteneri/gg.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -170,14 +176,16 @@ body{
     transform: scale(1.1);
 }
 
-.icon-h{
+.icon-h {
     display: flex;
     justify-content: center;
 }
-.icon{
+
+.icon {
     margin: 5px;
     transform: scale(1.2);
 }
+
 .title-sponsor {
     font-size: var(--font-size-title);
     font-weight: 900;
@@ -198,7 +206,7 @@ body{
     justify-content: center;
 }
 
-.card-category{
+.card-category {
     flex: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -209,7 +217,7 @@ body{
     margin-bottom: 20px;
 }
 
-.card-bg{
+.card-bg {
     display: flex;
     flex-direction: column;
     margin: 25px;
@@ -221,12 +229,12 @@ body{
     transition: 0.5s;
 }
 
-.card-bg:hover{
+.card-bg:hover {
     transform: scale(1.05);
 }
 
-.card-title{
-    font-size: var(--font-size-card);  
+.card-title {
+    font-size: var(--font-size-card);
     color: var(--white);
     align-self: center;
     justify-self: center;
@@ -241,56 +249,56 @@ body{
 }
 
 @media screen and (max-width: 950px) {
-    .title-sponsor{
+    .title-sponsor {
         font-size: var(--font-size-title-small);
         font-weight: 900;
     }
 
-    .card-category{
+    .card-category {
         margin-bottom: 100px;
     }
 
-    .card-bg{
+    .card-bg {
         margin: 25px;
         width: 300px;
         padding: 30px;
     }
-    
-    .card-title{
-        font-size: var(--font-size-card-small);  
+
+    .card-title {
+        font-size: var(--font-size-card-small);
     }
-    
-    .card-img{
+
+    .card-img {
         width: 200px;
         height: 200px;
         margin-bottom: 30px;
     }
-} 
+}
 
 
 @media screen and (max-width: 600px) {
-    .title-sponsor{
+    .title-sponsor {
         font-size: var(--font-size-title-smaller);
         font-weight: 900;
     }
 
-    .card-category{
+    .card-category {
         margin-bottom: 100px;
     }
 
-    .card-bg{
-        margin: 25px 70px 25px 70px;
+    .card-bg {
+        margin: 25px 0;
         width: 270px;
         padding: 30px;
     }
-    
-    .card-title{
-        font-size: var(--font-size-card-smaller);  
+
+    .card-title {
+        font-size: var(--font-size-card-smaller);
     }
-    
-    .card-img{
+
+    .card-img {
         width: 150px;
         height: 150px;
         margin-bottom: 30px;
     }
-} 
+}
