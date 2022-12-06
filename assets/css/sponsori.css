@@ -189,6 +189,12 @@ body {
     background-position: center;
     transform: scale(0.8);
 }
+.img-25{
+    background-image: url("../images/sponsori/parteneri/j.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .icon-h {
     display: flex;
     justify-content: center;
