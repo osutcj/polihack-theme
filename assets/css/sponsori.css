@@ -163,10 +163,9 @@ body {
 
 .img-22 {
     background-image: url("../images/sponsori/parteneri/gg.png");
-    background-size: contain;
+    background-size: 80%;
     background-repeat: no-repeat;
     background-position: center;
-    transform: scale(1.1);
 }
 .img-23{
     background-image: url("../images/sponsori/parteneri/h.png");
