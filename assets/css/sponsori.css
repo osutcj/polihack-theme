@@ -187,6 +187,12 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 }
+.img-26{
+    background-image: url("../images/sponsori/parteneri/transilvaniaNuts.png");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .icon-h {
     display: flex;
     justify-content: center;
