@@ -24,6 +24,18 @@ body {
     letter-spacing: 3px;
 }
 
+.img-70 {
+    background-image: url("/content/images/junior.jpg");
+}
+.img-71 {
+    background-image: url("/content/images/app.jpg");
+}
+.img-72 {
+    background-image: url("/content/images/web.jpg");
+}
+.img-73 {
+    background-image: url("/content/images/embedded.jpg");
+}
 .img-1 {
     background-image: url("/content/images/alina.png");
 }
