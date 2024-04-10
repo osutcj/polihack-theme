@@ -1,247 +1,238 @@
 body {
-    margin: 0;
+  margin: 0;
 }
 
 :root {
-    --font-size-title: 5rem;
-    --font-size-title-small: 2.5rem;
-    --font-size-title-smaller: 2.5rem;
-    --font-size-card: 4rem;
-    --font-size-card-small: 2rem;
-    --font-size-card-smaller: 2rem;
-    --black: white;
-    --white: black;
-    --secondary: rgb(237, 28, 36);
-    --secondary-transparent: rgba(237, 28, 35);
+  --font-size-title: 5rem;
+  --font-size-title-small: 2.5rem;
+  --font-size-title-smaller: 2.5rem;
+  --font-size-card: 4rem;
+  --font-size-card-small: 2rem;
+  --font-size-card-smaller: 2rem;
+  --black: white;
+  --white: black;
+  --secondary: rgb(237, 28, 36);
+  --secondary-transparent: rgba(237, 28, 35);
 }
 
-
 .title-sponsor {
-    font-size: var(--font-size-title);
-    font-weight: 900;
-    letter-spacing: 3px;
+  font-size: var(--font-size-title);
+  font-weight: 900;
+  letter-spacing: 3px;
 }
 
 .img-70 {
-    background-image: url("/content/images/junior.jpg");
+  background-image: url("/content/images/junior.jpg");
 }
 .img-71 {
-    background-image: url("/content/images/app.jpg");
+  background-image: url("/content/images/app.jpg");
 }
 .img-72 {
-    background-image: url("/content/images/web.jpg");
+  background-image: url("/content/images/web.jpg");
 }
 .img-73 {
-    background-image: url("/content/images/embedded.jpg");
+  background-image: url("/content/images/embedded.jpg");
 }
-=======
-
 .img-1 {
-    background-image: url("../images/sponsori/platinum/a.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url("../images/sponsori/Tosakana.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-
 
 .img-2 {
-    background-image: url("../images/sponsori/platinum/b.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url("../images/sponsori/digital_fullstack.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-
 .img-3 {
-    background-image: url("../images/sponsori/platinum/c.svg");
-    background-size: 60%;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url("../images/sponsori/platinum/e.svg");
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img-4 {
-    background-image: url("../images/sponsori/platinum/d.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url("../images/sponsori/GUH\ Logo_400x400.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img-5 {
-    background-image: url("../images/sponsori/platinum/e.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url("../images/sponsori/logo\ vitamin\ aqua_black.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img-6 {
-    background-image: url("../images/sponsori/gold/a.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url("../images/sponsori/arobs-logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-
 .img-7 {
-    background-image: url("../images/sponsori/silver/a.png");
-    background-size: 70%;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url("../images/sponsori/logo-bissoft.jpg");
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img-8 {
-    background-image: url("../images/sponsori/silver/b.png");
-    background-size: 70%;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url("../images/sponsori/betfair-romania-development.svg");
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-
 .img-9 {
-    background-image: url("../images/sponsori/silver/c.png");
-    background-size: 60%;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url("../images/sponsori/finshape.png");
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img-10 {
-    background-image: url("../images/sponsori/silver/d.png");
-    background-size: 70%;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url("../images/sponsori/silver/d.png");
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-
 .img-11 {
-    background-image: url("../images/sponsori/bronze/b.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url("../images/sponsori/bronze/b.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img-12 {
-    background-image: url("../images/sponsori/bronze/a.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url("../images/sponsori/bronze/a.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-
 .img-13 {
-    background-image: url("../images/sponsori/bronze/c.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url("../images/sponsori/bronze/c.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img-14 {
-    background-image: url("../images/sponsori/bronze/d.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url("../images/sponsori/bronze/d.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img-15 {
-    background-image: url("../images/sponsori/bronze/e.png");
-    background-size: 80%;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url("../images/sponsori/bronze/e.png");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img-16 {
-    background-image: url("../images/sponsori/parteneri/a.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url("../images/sponsori/parteneri/a.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img-17 {
-    background-image: url("../images/sponsori/parteneri/b.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url("../images/sponsori/parteneri/b.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img-19 {
-    background-image: url("../images/sponsori/platinum/d.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url("../images/sponsori/bli-logo-blue@2x.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
 }
 
 .img-20 {
-    background-image: url("../images/sponsori/parteneri/e.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url("../images/sponsori/parteneri/e.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img-21 {
-    background-image: url("../images/sponsori/parteneri/f.jpg");
-    background-size: 80%;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url("../images/sponsori/parteneri/f.jpg");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img-22 {
-    background-image: url("../images/sponsori/parteneri/gggg.png");
-    background-size: 80%;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url("../images/sponsori/parteneri/gggg.png");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.img-23{
-    background-image: url("../images/sponsori/parteneri/h.png");
-    background-size: 80%;
-    background-repeat: no-repeat;
-    background-position: center;
-    transform: scale(0.8);
+.img-23 {
+  background-image: url("../images/sponsori/parteneri/h.png");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: scale(0.8);
 }
-.img-24{
-    background-image: url("../images/sponsori/parteneri/ii.png");
-    background-size: 80%;
-    background-repeat: no-repeat;
-    background-position: center;
-    transform: scale(0.8);
+.img-24 {
+  background-image: url("../images/sponsori/parteneri/ii.png");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: scale(0.8);
 }
-.img-25{
-    background-image: url("../images/sponsori/platinum/j.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+.img-25 {
+  background-image: url("../images/sponsori/platinum/a.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.img-26{
-    background-image: url("../images/sponsori/parteneri/transilvaniaNuts.png");
-    background-size: 80%;
-    background-repeat: no-repeat;
-    background-position: center;
+.img-26 {
+  background-image: url("../images/sponsori/parteneri/transilvaniaNuts.png");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .icon-h {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .icon {
-    margin: 5px;
-    transform: scale(1.2);
+  margin: 5px;
+  transform: scale(1.2);
 }
 
 .title-sponsor {
-    font-size: var(--font-size-title);
-    font-weight: 900;
-    letter-spacing: 3px;
+  font-size: var(--font-size-title);
+  font-weight: 900;
+  letter-spacing: 3px;
 }
 
 .line {
-    color: var(--secondary);
+  color: var(--secondary);
 }
 
-
 .sponsori-content {
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .card-category {
@@ -251,89 +242,90 @@ body {
     justify-content: space-around;
     margin-top: 20px;
     margin-bottom: 20px;
+
 }
 
 .card-bg {
-    display: flex;
-    flex-direction: column;
-    margin: 25px;
-    width: 250px;
-    height: 250px;
-    padding: 30px;
-    border-radius: 3rem;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  margin: 25px;
+  width: 250px;
+  height: 250px;
+  padding: 30px;
+  border-radius: 3rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  transition: 0.5s;
 }
 
 .card-bg:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .card-title {
     color: var(--white);
     align-self: center;
     justify-self: center;
+
 }
 
 .card-img {
-    border-radius: 50%;
-    width: 225px;
-    height: 225px;
-    align-self: center;
-    justify-self: center;
+  border-radius: 50%;
+  width: 225px;
+  height: 225px;
+  align-self: center;
+  justify-self: center;
 }
 
 @media screen and (max-width: 950px) {
-    .title-sponsor {
-        font-size: var(--font-size-title-small);
-        font-weight: 900;
-    }
+  .title-sponsor {
+    font-size: var(--font-size-title-small);
+    font-weight: 900;
+  }
 
-    .card-category {
-        margin-bottom: 100px;
-    }
+  .card-category {
+    margin-bottom: 100px;
+  }
 
-    .card-bg {
-        margin: 25px;
-        width: 300px;
-        padding: 30px;
-    }
+  .card-bg {
+    margin: 25px;
+    width: 300px;
+    padding: 30px;
+  }
 
-    .card-title {
-        font-size: var(--font-size-card-small);
-    }
+  .card-title {
+    font-size: var(--font-size-card-small);
+  }
 
-    .card-img {
-        width: 200px;
-        height: 200px;
-        margin-bottom: 30px;
-    }
+  .card-img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 30px;
+  }
 }
 
-
 @media screen and (max-width: 600px) {
-    .title-sponsor {
-        font-size: var(--font-size-title-smaller);
-        font-weight: 900;
-    }
+  .title-sponsor {
+    font-size: var(--font-size-title-smaller);
+    font-weight: 900;
+  }
 
-    .card-category {
-        margin-bottom: 100px;
-    }
+  .card-category {
+    margin-bottom: 100px;
+  }
 
-    .card-bg {
-        margin: 25px 0;
-        width: 270px;
-        padding: 30px;
-    }
+  .card-bg {
+    margin: 25px 0;
+    width: 270px;
+    padding: 30px;
+  }
 
-    .card-title {
-        font-size: var(--font-size-card-smaller);
-    }
+  .card-title {
+    font-size: var(--font-size-card-smaller);
+  }
 
-    .card-img {
-        width: 150px;
-        height: 150px;
-        margin-bottom: 30px;
-    }
+  .card-img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 30px;
+  }
 }
