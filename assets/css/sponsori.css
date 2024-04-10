@@ -248,8 +248,6 @@ body {
     flex: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin-left: 75px;
-    margin-right: 75px;
     justify-content: space-around;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -272,7 +270,6 @@ body {
 }
 
 .card-title {
-    font-size: var(--font-size-card);
     color: var(--white);
     align-self: center;
     justify-self: center;

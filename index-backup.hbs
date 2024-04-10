@@ -1,15 +1,30 @@
-{{!< default}}
 <link rel="stylesheet" type="text/css" href="{{asset " assets/css1/file.css"}}" />
 <link rel="stylesheet" href="{{asset 'css/carousel-testimonials.css'}}" />
-<link rel="stylesheet" type="text/css" href="{{asset "assets/css/sponsori.css"}}" />
-<link rel="stylesheet" type="text/css" href="{{asset "assets/css/index.css"}}" />
-<link rel="stylesheet" type="text/css" href="{{asset "assets/css/screen.css"}}" />
+ <link rel="stylesheet" type="text/css" href="{{asset "assets/css/sponsori.css"}}" />
 
+{{!< default}} <div class="site-header-content">
+    {{#if @site.cover_image}}
+    {{!-- This is a responsive image, it loads different sizes depending on device
+    https://medium.freecodecamp.org/a-guide-to-responsive-images-with-ready-to-use-templates-c400bd65c433 --}}
+    <img class="site-header-cover" style="position: fixed" srcset="{{img_url @site.cover_image size=" s"}} 300w, {{img_url @site.cover_image
+        size="m" }} 600w, {{img_url @site.cover_image size="l" }} 1000w, {{img_url @site.cover_image size="xl" }} 2000w"
+        sizes="100vw" src="{{img_url @site.cover_image size=" xl"}}" alt="" />
+    {{/if}}
+    <h1 class="site-title">
+        {{#if @site.logo}}
+        <img class="site-logo" src="{{img_url @site.logo size=" l"}}" alt="{{@site.title}}" />
+        {{else}}
+        {{@site.title}}
+        {{/if}}
+    </h1>
+    <p style="color: white; opacity: .99">{{@site.description}}</p>
+    <p style="color: white; opacity: .99">9 - 11 Decembrie</p>
+    </div>
 
+    <main id="site-main" style="z-index: 200; background-color: white;" class="site-main outer" style="width: 100%; overflow:">
 
-<main id="site-main" style="z-index: 200; background-color: white;" class="site-main outer" style="width: 100%; overflow:">
-<img class="banner_ph" src="{{img_url @site.cover_image}}" alt="" />
-    <div class="py-5" style="
+        <!-- Presentation sections -->
+        <div class="py-5" style="
                 background-color: var(--bs-gray-100);
                 color: var(--bs-gray-100);
             ">
@@ -50,39 +65,6 @@
                     </div>
                 </div>
 
-                <div class="row flex-column-reverse flex-md-row mt-n5 mt-md-0">
-                    <div class="col-sm-12 col-md-6 d-flex justify-content-center align-items-center flex-column">
-                        <div class="p-5 special-shadow move-up-on-hover" style="
-                                background-color: var(--bs-gray-100);
-                                color: var(--bs-gray-900);
-                                border-radius: 16px;
-                                background-image: url('/content/images/ph3.webp');
-                                background-size: cover;
-                                background-repeat: no-repeat;
-                                max-width: 100%;
-                                width: 500px;
-                                height: 250px;
-                            ">
-                        </div>
-                    </div>
-                    <div
-                        class="pt-0 pt-md-5 col-sm-12 col-md-6 d-flex justify-content-center align-items-center flex-column p-5">
-                        <div class="pt-0 pt-md-5 p-5" style="
-                                color: var(--bs-gray-900);
-                                border-radius: 16px;
-                            ">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor"
-                                class="bi bi-eyeglasses align-self-start mb-5" viewBox="0 0 16 16">
-                                <path
-                                    d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zm2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A1.993 1.993 0 0 0 8 6c-.532 0-1.016.208-1.375.547zM14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" />
-                            </svg>
-                            <p class="fs-2 fw-bold">
-                               PoliHack’s mission is  to unite students and high schoolers who have a passion for technology. In a dynamic 48-hour sprint, participants refine ideas, pushing innovation's limits. Join a collective of forward-thinkers, where creativity knows no bounds!
-
-                            </p>
-                        </div>
-                    </div>
-                </div>
                 <div class="row flex-column-reverse flex-md-row mt-n5 mt-md-0">
                     <div class="col-sm-12 col-md-6 d-flex justify-content-center align-items-center flex-column">
                         <div class="p-5 special-shadow move-up-on-hover" style="
@@ -212,6 +194,47 @@
                 </div>
             </div>
         </div>
+
+        <!-- SPONSORI -->
+        {{!-- <div id="sponsors">
+            <h1 style="text-align: center; font-size: 3.6em">SPONSORI</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-3 container-center">
+                        <a href="#">
+                            <div class="sponsors">
+                                <img src="/content/images/SAS-UTCN.webp" width="200">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-3 container-center">
+                        <a href="#">
+                            <div class="sponsors">
+                                <img src="/content/images/SAS-UTCN.webp" width="200">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-3 container-center">
+                        <a href="#">
+                            <div class="sponsors">
+                                <img src="/content/images/SAS-UTCN.webp" width="200">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-3 container-center">
+                        <a href="#">
+                            <div class="sponsors">
+                                <img src="/content/images/SAS-UTCN.webp" width="200">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div> --}}
+
         <div style="border-bottom: 1px solid var(--bs-gray-500);">
             <h1 style="text-align: center; color: var(--bs-gray-900); margin-top: 1vw;">Ce spun mentorii?</h1>
             {{> carousel-testimonials}}
@@ -244,7 +267,7 @@
                     </div>
 
 
-                    <div class = "card-category" style="flex-wrap:wrap; justify-content:space-around">
+                    <div class = "card-category" style="flex-wrap:nowrap; justify-content:space-around">
                         <div class = "card-bg">
                             
                             
@@ -321,4 +344,5 @@
             </div>
         </div>
 
-</main>
+        </div>
+    </main>
