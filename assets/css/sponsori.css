@@ -236,14 +236,13 @@ body {
 }
 
 .card-category {
-  flex: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 75px;
-  margin-right: 75px;
-  justify-content: space-around;
-  margin-top: 20px;
-  margin-bottom: 20px;
+    flex: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
 }
 
 .card-bg {
@@ -263,10 +262,10 @@ body {
 }
 
 .card-title {
-  font-size: var(--font-size-card);
-  color: var(--white);
-  align-self: center;
-  justify-self: center;
+    color: var(--white);
+    align-self: center;
+    justify-self: center;
+
 }
 
 .card-img {
