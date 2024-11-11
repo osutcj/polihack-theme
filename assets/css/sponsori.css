@@ -1,331 +1,458 @@
-body {
-  margin: 0;
-}
-
-:root {
-  --font-size-title: 5rem;
-  --font-size-title-small: 2.5rem;
-  --font-size-title-smaller: 2.5rem;
-  --font-size-card: 4rem;
-  --font-size-card-small: 2rem;
-  --font-size-card-smaller: 2rem;
-  --black: white;
-  --white: black;
-  --secondary: rgb(237, 28, 36);
-  --secondary-transparent: rgba(237, 28, 35);
-}
-
-.title-sponsor {
-  font-size: var(--font-size-title);
-  font-weight: 900;
-  letter-spacing: 3px;
-}
-
-.img-70 {
-  background-image: url("/content/images/junior.jpg");
-}
-.img-71 {
-  background-image: url("/content/images/app.jpg");
-}
-.img-72 {
-  background-image: url("/content/images/web.jpg");
-}
-.img-73 {
-  background-image: url("/content/images/embedded.jpg");
-}
-.img-1 {
-  background-image: url("../images/sponsori/Tosakana.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.img-2 {
-  background-image: url("../images/sponsori/digital_fullstack.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.img-3 {
-  background-image: url("../images/sponsori/platinum/e.svg");
-  background-size: 60%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.img-4 {
-  background-image: url("../images/sponsori/GUH\ Logo_400x400.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.img-5 {
-  background-image: url("../images/sponsori/logo\ vitamin\ aqua_black.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.img-6 {
-  background-image: url("../images/sponsori/arobs-logo.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.img-7 {
-  background-image: url("../images/sponsori/logo-bissoft.jpg");
-  background-size: 70%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.img-8 {
-  background-image: url("../images/sponsori/betfair-romania-development.svg");
-  background-size: 70%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.img-9 {
-  background-image: url("../images/sponsori/finshape.png");
-  background-size: 60%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.img-10 {
-  background-image: url("../images/sponsori/silver/d.png");
-  background-size: 70%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.img-11 {
-  background-image: url("../images/sponsori/bronze/b.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.img-12 {
-  background-image: url("../images/sponsori/bronze/a.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.img-13 {
-  background-image: url("../images/sponsori/bronze/c.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.img-14 {
-  background-image: url("../images/sponsori/bronze/d.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.img-15 {
-  background-image: url("../images/sponsori/bronze/e.png");
-  background-size: 80%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.img-16 {
-  background-image: url("../images/sponsori/parteneri/a.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.img-17 {
-  background-image: url("../images/sponsori/parteneri/b.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.img-19 {
-  background-image: url("../images/sponsori/bli-logo-blue@2x.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 80%;
-}
-
-.img-20 {
-  background-image: url("../images/sponsori/parteneri/e.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.img-21 {
-  background-image: url("../images/sponsori/parteneri/f.jpg");
-  background-size: 80%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.img-22 {
-  background-image: url("../images/sponsori/parteneri/gggg.png");
-  background-size: 80%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.img-23 {
-  background-image: url("../images/sponsori/parteneri/h.png");
-  background-size: 80%;
-  background-repeat: no-repeat;
-  background-position: center;
-  transform: scale(0.8);
-}
-.img-24 {
-  background-image: url("../images/sponsori/parteneri/ii.png");
-  background-size: 80%;
-  background-repeat: no-repeat;
-  background-position: center;
-  transform: scale(0.8);
-}
-.img-25 {
-  background-image: url("../images/sponsori/platinum/a.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.img-26 {
-  background-image: url("../images/sponsori/parteneri/transilvaniaNuts.png");
-  background-size: 80%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.icon-h {
-  display: flex;
-  justify-content: center;
-}
-
-.icon {
-  margin: 5px;
-  transform: scale(1.2);
-}
-
-.title-sponsor {
-  font-size: var(--font-size-title);
-  font-weight: 900;
-  letter-spacing: 3px;
-}
-
-.line {
-  color: var(--secondary);
-}
-
-.sponsori-content {
+*{
+  font-family:tahoma, sans-serif;
+ }
+  .container {
+ position: relative;
   width: 100%;
-  height: fit-content;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 20px;
+  }
+
+.card-grid {
+  display: grid;
+  gap: 2rem 1rem;
+  margin: 0 auto;
+  width: 90%;
+  
+}
+.bg{
+  background-image: url('/content/images/team/bg.png');
+  width: 50%;
+}
+/* Large screens: 3 columns */
+@media (min-width: 1024px) {
+  .card-grid {
+     grid-template-columns: repeat(3, 1fr);
+      gap: 2rem; /* Spațiu între coloane */
+      justify-content: center; /* Centrează conținutul */
+      margin:0 auto;
+      width: 65%;
+  }
+  
+}
+
+/* Medium screens: 2 columns */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .card-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Small screens: 1 column */
+@media (max-width: 767px) {
+  .card-grid {
+      grid-template-columns: 1fr;
+  }
+}
+
+
+
+.container img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  
+  transition: 0.3s ease;
+}
+
+
+.container .card-body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 10;
+  background-color: rgba(0, 0, 0, 0); 
+  color: #ffffff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.card-category {
-    flex: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 20px;
-    margin-bottom: 20px;
-
-}
-
-.card-bg {
-  display: flex;
+  text-align: center;
   flex-direction: column;
-  margin: 25px;
-  width: 250px;
-  height: 250px;
-  padding: 30px;
-  border-radius: 3rem;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  transition: 0.5s;
-}
-
-.card-bg:hover {
-  transform: scale(1.05);
-}
-
-.card-title {
-    color: var(--white);
-    align-self: center;
-    justify-self: center;
+  padding: 0.2em;
 
 }
 
-.card-img {
-  border-radius: 50%;
-  width: 225px;
-  height: 225px;
-  align-self: center;
-  justify-self: center;
+.container:hover .card-body {
+  opacity: 1;
 }
 
-@media screen and (max-width: 950px) {
-  .title-sponsor {
-    font-size: var(--font-size-title-small);
-    font-weight: 900;
+
+  .container .card-body h2 {
+ font-size: 3rem;
+  font-weight: bold;
+  
+  
   }
 
-  .card-category {
-    margin-bottom: 100px;
+  .container .card-body p.role {
+  font-size: 2rem;
+  margin-top: 0.5em;
+  }
+ .icon {
+  color: #ffffff;
+  font-size: 22px;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.icon:hover {
+  color: #cccccc;
+}
+ .container .links {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+  .text{
+      color:#ffffff;
+      
+      text-align:justify;
   }
 
-  .card-bg {
-    margin: 25px;
-    width: 300px;
-    padding: 30px;
+  .h1{
+      text-align:center;
+     
+       color: rgb(255, 255, 255); 
+       font-size: 5vw; 
+       margin-top: 0;
+      
+  }
+ 
+.container_text {
+  width: 80%;
+  max-width: 100%; /* Set a maximum width */
+  margin: 0 auto; /* Center the container */
+  
+}
+
+.sectiuni {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* Default: 1 column */
+  gap: 3rem;
+  position: relative;
+  background-image: url('/assets/images/logo_bun.png');
+  background-position: center;
+  background-size: contain; /* Ensures the entire image is visible */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+.sectiuni::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(30, 30, 30, 0.9); /* Semi-transparent layer */
+  border-radius: 10px;
+  z-index: 1; /* Layer is above the background image */
+}
+
+.sectiuni > div {
+  position: relative;
+  z-index: 2; /* Content appears above the overlay */
+}
+
+ .h2{
+      text-align:center;
+      font-size:2.5vw;
+       color: rgb(255, 255, 255); 
+      
+      
   }
 
-  .card-title {
-    font-size: var(--font-size-card-small);
+  @media (min-width: 1024px) {
+  .h2 {
+     font-size:2.5vw;
   }
+  
+}
 
-  .card-img {
-    width: 200px;
-    height: 200px;
-    margin-bottom: 30px;
+/* Medium screens: 2 columns */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .h2 {
+      font-size:3vw;
   }
 }
 
-@media screen and (max-width: 600px) {
-  .title-sponsor {
-    font-size: var(--font-size-title-smaller);
-    font-weight: 900;
+/* Small screens: 1 column */
+@media (max-width: 767px) {
+  .h2 {
+     font-size:6vw;
   }
+}
 
-  .card-category {
-    margin-bottom: 100px;
+
+.web{ 
+  border: 2px solid #ffffff; /* White border */
+  border-radius: 10px; /* Optional: adds rounded corners */
+  padding: 1rem; /* Optional: adds padding inside the border */
+  background-color: rgba(255, 255, 255, 0.2);
+  align-items: center; 
+
+}
+
+.app{ 
+  border: 2px solid #ffffff; /* White border */
+  border-radius: 10px; /* Optional: adds rounded corners */
+  padding: 1rem; /* Optional: adds padding inside the border */
+    background-color: rgba(255, 255, 255, 0.2);
+    align-items: center; 
+
+}
+.web img, .app img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem; /* Spațiu între imagine și restul conținutului */
+}
+.embedded{ 
+  border: 2px solid #ffffff; /* White border */
+  border-radius: 10px; /* Optional: adds rounded corners */
+  padding: 1rem; /* Optional: adds padding inside the border */
+    background-color: rgba(255, 255, 255, 0.2);
+
+}
+.junior{ 
+  border: 2px solid #ffffff; /* White border */
+  border-radius: 10px; /* Optional: adds rounded corners */
+  padding: 1rem; /* Optional: adds padding inside the border */
+  background-color: rgba(255, 255, 255, 0.2);
+
+}
+.pitch {
+  border: 2px solid #761114;
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: rgba(118, 17, 20, 0.2);
+  background-image: url('/assets/images/phfuture.png');
+  background-repeat:no-repeat;
+  background-size: 100%;
+  background-position:center;
+  
+  
+}
+
+.pitch p {
+  font-size: 1.5vw; /* Default font size based on viewport width */
+}
+
+/* For larger screens */
+@media (min-width: 1024px) {
+  .pitch p {
+      font-size: 1.2vw; /* Smaller font size for larger screens */
   }
+}
 
-  .card-bg {
-    margin: 25px 0;
-    width: 270px;
-    padding: 30px;
+/* For smaller screens */
+@media (max-width: 768px) {
+  .pitch p {
+      font-size: 3.5vw; /* Larger font size for small screens */
   }
+}
 
-  .card-title {
-    font-size: var(--font-size-card-smaller);
+/* For very small screens, like mobile phones */
+@media (max-width: 480px) {
+  .pitch p {
+      font-size: 4vw; /* Even larger font size for very small screens */
   }
+}
 
-  .card-img {
-    width: 150px;
-    height: 150px;
-    margin-bottom: 30px;
+@media (min-width: 768px) {
+  .sectiuni {
+      grid-template-columns: repeat(2, 1fr); /* Medium screens: 2 columns */
+  }
+}
+
+@media (min-width: 1024px) {
+  .sectiuni {
+      grid-template-columns: repeat(4, 1fr); /* Large screens: 4 columns */
+  }
+}
+
+
+
+.scroll-container {
+overflow-x: auto;
+overflow-y: hidden;
+white-space: nowrap;
+width: 83%; /* Similar width to other content sections */
+max-width: 100%;
+margin: 0 auto; /* Center the container */
+display: flex;
+scrollbar-width: none; /* Firefox scrollbar removal */
+
+}
+
+.scroll-container::-webkit-scrollbar {
+display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+}
+
+.scroll-container img {
+
+height: 38vh; /* Adjust to desired image height */
+object-fit: cover;
+
+
+}
+
+.networking{
+  border: 0.2vw solid #ffffff; /* White border */
+  border-radius: 10px; /* Optional: adds rounded corners */
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 73%;
+  margin: 0 auto;
+ 
+}
+
+.section1 {
+  position: relative;
+ 
+  border-radius: 10px;
+  height:70%;
+}
+
+.section1, .sectiuni, .pitch {
+  position: relative;
+  width: 90%; /* Set a fixed width in percentage */
+  
+  margin: 0 auto; /* Center the container */
+}
+
+.section1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(30, 30, 30, 0.9); /* Strat semi-transparent peste imagine */
+  border-radius: 10px;
+  z-index: 1; /* Se asigură că stratul este deasupra imaginii */
+}
+
+.section1 > div {
+  position: relative;
+  z-index: 2; /* Conținutul apare deasupra stratului opac */
+}
+/* For larger screens, adjust the number of columns */
+@media (min-width: 768px) {
+  .sectiuni {
+      grid-template-columns: repeat(2, 1fr); /* Medium screens: 2 columns */
+  }
+}
+
+@media (min-width: 1024px) {
+  .sectiuni {
+      grid-template-columns: repeat(4, 1fr); /* Large screens: 4 columns */
+  }
+}
+
+
+.polihack{
+
+  border-radius: 10px; /* Optional: adds rounded corners */
+  padding: 1vw; /* Optional: adds padding inside the border */
+   width: 90%;
+   margin: 0 auto;
+ 
+}
+
+.team{
+   position: relative;
+  background-image: url('/assets/images/team/TEAM.png');
+  background-position: center;
+  background-size: 30%; /* Make the image smaller */
+  border-radius: 10px;
+  height: 70%;
+  background-color: rgba(30, 30, 30, 4); /* Increase transparency */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 2;
+}
+
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
   }
 }

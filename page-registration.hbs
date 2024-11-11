@@ -1,0 +1,72 @@
+
+{{!< default}} {{!-- The tag above means: insert everything in this file into the {body} tag of the default.hbs template
+    --}} 
+    <link rel="stylesheet" type="text/css" href="{{asset " assets/css1/file.css"}}" />
+<link rel="stylesheet" href="{{asset 'css/carousel-testimonials.css'}}" />
+<link rel="stylesheet" type="text/css" href="{{asset "assets/css/sponsori.css"}}" />
+<link rel="stylesheet" type="text/css" href="{{asset "assets/css/index.css"}}" />
+<link rel="stylesheet" type="text/css" href="{{asset "assets/css/screen.css"}}" />
+    {{#post}} {{!-- Everything inside the #post block pulls data from the page --}} 
+    <main id="site-main" class="site-main">
+        <article class="article {{post_class}}">
+
+            <header class="article-header gh-canvas">
+                {{#if feature_image}}
+                <figure class="article-image">
+                    {{!-- This is a responsive image, it loads different sizes depending on device
+                    https://medium.freecodecamp.org/a-guide-to-responsive-images-with-ready-to-use-templates-c400bd65c433
+                    --}}
+                    <img srcset="{{img_url feature_image size=" s"}} 300w, {{img_url feature_image size="m" }} 600w,
+                        {{img_url feature_image size="l" }} 1000w, {{img_url feature_image size="xl" }} 2000w"
+                        sizes="(min-width: 1400px) 1400px, 92vw" src="{{img_url feature_image size=" xl"}}"
+                        alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}" />
+                    {{#if feature_image_caption}}
+                    <figcaption>{{feature_image_caption}}</figcaption>
+                    {{/if}}
+                </figure>
+                {{/if}}
+            </header>
+
+            <h1 class="soon"> Coming soon... </h1> 
+
+        </article>
+    </main>
+    <script>
+// JavaScript for scroll detection (desktop only)
+document.addEventListener('DOMContentLoaded', () => {
+    const header = document.querySelector('.gh-head');
+
+    const handleScroll = () => {
+        // Only apply the scroll effect if the viewport width is above 900px
+        if (window.innerWidth >= 900) {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        } else {
+            // Remove the 'scrolled' class on mobile to ensure a consistent look
+            header.classList.remove('scrolled');
+        }
+    };
+
+    // Add the scroll event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Check on window resize as well
+    window.addEventListener('resize', handleScroll);
+});
+
+document.querySelector('a[href^="#"]').addEventListener("click", function(event) {
+    event.preventDefault();
+
+    const targetId = this.getAttribute("href").substring(1);
+    const targetElement = document.getElementById(targetId);
+
+    window.scrollTo({
+        top: targetElement.offsetTop,
+        behavior: "smooth"
+    });
+});
+    </script>
+    {{/post}}

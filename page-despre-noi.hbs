@@ -1,208 +1,611 @@
+ {{!-- Everything inside the #post block pulls data from the page --}} 
 
-{{!< default}} {{!-- The tag above means: insert everything in this file into the {body} tag of the default.hbs template
-    --}} {{#post}} {{!-- Everything inside the #post block pulls data from the page --}} 
-    
-    <style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" type="text/css" href="{{asset "assets/css1/file.css"}}" />
+<link rel="stylesheet" href="{{asset 'css/carousel-testimonials.css'}}" />
+<link rel="stylesheet" type="text/css" href="{{asset "assets/css/sponsori.css"}}" />
+<link rel="stylesheet" type="text/css" href="{{asset "assets/css/index.css"}}" />
+<link rel="stylesheet" type="text/css" href="{{asset "assets/css/screen.css"}}" />
+ <style>
+   *{
+    font-family:tahoma, sans-serif;
+   }
     .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100vw;
-    max-width: 1024px;
-    margin: 0 auto;
-    }
-
-    .card-grid {
-    margin-top: 3em;
-    --auto-grid-min-size: 300px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
-    grid-gap: 2rem 0rem;
-    grid-auto-rows: 1fr;
-    }
-
-    .card {
-    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
-    width: 300px;
-    margin: auto;
-    text-align: center;
-    border-radius: 10px;
-    transition-duration: 400ms;
-    height: 100%;
-    }
-
-    .card img {
-    max-width: 300px;
+   position: relative;
     width: 100%;
-    height: 225px;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 20px;
+    }
+
+  .card-grid {
+    display: grid;
+    gap: 2rem 1rem;
+    margin: 0 auto;
+    width: 90%;
+    
+}
+.bg{
+    background-image: url('/content/images/team/bg.png');
+    width: 50%;
+}
+/* Large screens: 3 columns */
+@media (min-width: 1024px) {
+    .card-grid {
+       grid-template-columns: repeat(3, 1fr);
+        gap: 2rem; /* Spațiu între coloane */
+        justify-content: center; /* Centrează conținutul */
+        margin:0 auto;
+        width: 65%;
+    }
+    
+}
+
+/* Medium screens: 2 columns */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Small screens: 1 column */
+@media (max-width: 767px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+ .container img {
+    width: 100%;
+    height: 50vh;
     object-fit: cover;
-    border-radius: 10px;
-    object-position: center;
-    }
+    transition: 0.3s ease;
+}
 
-    .card .card-body {
+
+.container .card-body {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 10;
+    background-color: rgba(0, 0, 0, 0); 
+    color: #ffffff;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 1em 2em;
+    flex-direction: column;
+    padding: 0.2em;
+
+}
+
+.container:hover .card-body {
+    opacity: 1;
+}
+
+
+    .container .card-body h2 {
+   font-size: 3rem;
+    font-weight: bold;
+    
+    
     }
 
-    .card .card-body h2 {
-    margin: 0 0 .5em;
-    font-weight: 700;
+    .container .card-body p.role {
     font-size: 2rem;
+    margin-top: 0.5em;
+    }
+   .icon {
+    color: #ffffff;
+    font-size: 22px;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.icon:hover {
+    color: #cccccc;
+}
+   .container .links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+    .text{
+        color:#ffffff;
+        
+        text-align:justify;
     }
 
-    .card .card-body p.role {
-        color: #B50000;
+    .h1{
+        text-align:center;
+       
+         color: rgb(255, 255, 255); 
+         font-size: 5vw; 
+         margin-top: 0;
+        
+    }
+   
+ .container_text {
+    width: 80%;
+    max-width: 100%; /* Set a maximum width */
+    margin: 0 auto; /* Center the container */
+    
+}
+
+.sectiuni {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Default: 1 column */
+    gap: 3rem;
+    position: relative;
+    background-image: url('/assets/images/logo_bun.png');
+    background-position: center;
+    background-size: contain; /* Ensures the entire image is visible */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+.sectiuni::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(30, 30, 30, 0.9); /* Semi-transparent layer */
+    border-radius: 10px;
+    z-index: 1; /* Layer is above the background image */
+}
+
+.sectiuni > div {
+    position: relative;
+    z-index: 2; /* Content appears above the overlay */
+}
+
+   .h2{
+        text-align:center;
+        font-size:2.5vw;
+         color: rgb(255, 255, 255); 
+        
+        
     }
 
-    .icon:hover {
-        color: #B50000;
+    @media (min-width: 1024px) {
+    .h2 {
+       font-size:2.5vw;
     }
+    
+}
+
+/* Medium screens: 2 columns */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .h2 {
+        font-size:3vw;
+    }
+}
+
+/* Small screens: 1 column */
+@media (max-width: 767px) {
+    .h2 {
+       font-size:6vw;
+    }
+}
+
+
+.web{ 
+    border: 2px solid #ffffff; /* White border */
+    border-radius: 10px; /* Optional: adds rounded corners */
+    padding: 1rem; /* Optional: adds padding inside the border */
+    background-color: rgba(255, 255, 255, 0.2);
+    
+
+}
+.app{ 
+    border: 2px solid #ffffff; /* White border */
+    border-radius: 10px; /* Optional: adds rounded corners */
+    padding: 1rem; /* Optional: adds padding inside the border */
+      background-color: rgba(255, 255, 255, 0.2);
+
+}
+.embedded{ 
+    border: 2px solid #ffffff; /* White border */
+    border-radius: 10px; /* Optional: adds rounded corners */
+    padding: 1rem; /* Optional: adds padding inside the border */
+      background-color: rgba(255, 255, 255, 0.2);
+
+}
+.junior{ 
+    border: 2px solid #ffffff; /* White border */
+    border-radius: 10px; /* Optional: adds rounded corners */
+    padding: 1rem; /* Optional: adds padding inside the border */
+    background-color: rgba(255, 255, 255, 0.2);
+
+}
+.pitch {
+    border: 2px solid #761114;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: rgba(118, 17, 20, 0.2);
+    background-image: url('/assets/images/phfuture.png');
+    background-repeat:no-repeat;
+    background-size: 100%;
+    background-position:center;
+    
+    
+}
+
+.pitch p {
+    font-size: 1.5vw; /* Default font size based on viewport width */
+}
+
+/* For larger screens */
+@media (min-width: 1024px) {
+    .pitch p {
+        font-size: 1.2vw; /* Smaller font size for larger screens */
+    }
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+    .pitch p {
+        font-size: 3.5vw; /* Larger font size for small screens */
+    }
+}
+
+/* For very small screens, like mobile phones */
+@media (max-width: 480px) {
+    .pitch p {
+        font-size: 4vw; /* Even larger font size for very small screens */
+    }
+}
+
+@media (min-width: 768px) {
+    .sectiuni {
+        grid-template-columns: repeat(2, 1fr); /* Medium screens: 2 columns */
+    }
+}
+
+@media (min-width: 1024px) {
+    .sectiuni {
+        grid-template-columns: repeat(4, 1fr); /* Large screens: 4 columns */
+    }
+}
+
+
+
+.scroll-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  width: 83%; /* Similar width to other content sections */
+  max-width: 100%;
+  margin: 0 auto; /* Center the container */
+  display: flex;
+  scrollbar-width: none; /* Firefox scrollbar removal */
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+}
+
+.scroll-container img {
+ 
+  height: 50vh; /* Adjust to desired image height */
+  object-fit: cover;
+ 
+}
+
+.networking{
+    border: 0.2vw solid #ffffff; /* White border */
+    border-radius: 10px; /* Optional: adds rounded corners */
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 73%;
+    margin: 0 auto;
+   
+}
+
+.section1 {
+    position: relative;
+   
+    border-radius: 10px;
+    height:70%;
+}
+
+.section1, .sectiuni, .pitch {
+    position: relative;
+    width: 90%; /* Set a fixed width in percentage */
+    
+    margin: 0 auto; /* Center the container */
+}
+
+.section1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(30, 30, 30, 0.9); /* Strat semi-transparent peste imagine */
+    border-radius: 10px;
+    z-index: 1; /* Se asigură că stratul este deasupra imaginii */
+}
+
+.section1 > div {
+    position: relative;
+    z-index: 2; /* Conținutul apare deasupra stratului opac */
+}
+ /* For larger screens, adjust the number of columns */
+@media (min-width: 768px) {
+    .sectiuni {
+        grid-template-columns: repeat(2, 1fr); /* Medium screens: 2 columns */
+    }
+}
+
+@media (min-width: 1024px) {
+    .sectiuni {
+        grid-template-columns: repeat(4, 1fr); /* Large screens: 4 columns */
+    }
+}
+
+
+.polihack{
+
+    border-radius: 10px; /* Optional: adds rounded corners */
+    padding: 1vw; /* Optional: adds padding inside the border */
+     width: 90%;
+     margin: 0 auto;
+   
+}
+
+.team{
+     position: relative;
+    background-image: url('/assets/images/team/TEAM.png');
+    background-position: center;
+    background-size: 30%; /* Make the image smaller */
+    border-radius: 10px;
+    height: 70%;
+    background-color: rgba(30, 30, 30, 4); /* Increase transparency */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 2;
+}
+
+
     </style>
 
-    <main id="site-main" class="site-main">
-        <article class="article {{post_class}}">
+{{!< default}} {{!-- The tag above means: insert everything in this file into the {body} tag of the default.hbs template
+    --}} {{#post}}
 
-            <header class="article-header gh-canvas">
-                {{#if feature_image}}
-                <figure class="article-image">
-                    {{!-- This is a responsive image, it loads different sizes depending on device
-                    https://medium.freecodecamp.org/a-guide-to-responsive-images-with-ready-to-use-templates-c400bd65c433
-                    --}}
-                    <img srcset="{{img_url feature_image size=" s"}} 300w, {{img_url feature_image size="m" }} 600w,
-                        {{img_url feature_image size="l" }} 1000w, {{img_url feature_image size="xl" }} 2000w"
-                        sizes="(min-width: 1400px) 1400px, 92vw" src="{{img_url feature_image size=" xl"}}"
-                        alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}" />
-                    {{#if feature_image_caption}}
-                    <figcaption>{{feature_image_caption}}</figcaption>
-                    {{/if}}
-                </figure>
-                {{/if}}
-            </header>
+   <main id="site-main" style="z-index: 200; background-color: #1e1e1e;" class="site-main outer" style="width: 100%; overflow:">     
+ 
+ <br>
+ <br>
 
-            <section class="container">
-
-
-                <div class="article-title" style="text-align: center;">
-                    <h1>About PoliHack</h1>
+      
+            <div class="container_text text">
+                <div class="h1" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                    <h1 style="background-image:url('/assets/images/team/background.png'); background-size:80vh; background-position:center;">What is PoliHack???</h1>
                 </div>
-
+            <div class="section1">
                 <div>
-                    <p>PoliHack is a 48-hour hackathon that takes place every university semester, promoting innovation and collaboration among students and tech enthusiasts. Participants can register in categories such as WEB, APP, and EMBEDDED, with a dedicated section for high school participants, JUNIOR. This project offers them the chance to turn their ideas into viable projects, with support from mentors throughout the duration of the hackathon. The event promotes skills like teamwork and communication, contributing to shaping a generation ready for technological challenges. Balancing technology and business provides participants with an opportunity to test and enhance their skills in a competitive yet collaborative environment. PoliHack takes place from April 11th to April 14th, 2024, and for more details, you can follow us on Instagram or Facebook.
+                    <p>Are you ready for 48 hours of non-stop innovation, creativity, and coding challenges? Grab your laptop, bring your ideas, and join us for an unforgettable hackathon experience! Whether you’re an experienced coder, a talented designer, or simply looking for some fun, PoliHack is the perfect place for you.</p> </div>
+                <br>
+                <div>
+                    <p>Get involved in two intense days of hacking and networking. Form teams 3 to 5 friends, make new connections on the spot, and collaborate to build something amazing from scratch. Participate in workshops led by industry professionals, receive valuable advice and guidance from experienced mentors, but don’t forget to take a breather—the chill zone awaits.</p>   </div>
+                <br>
+                <div>
+                    <p>Specifically designed for high school and university students eager to showcase their talents and explore the fascinating world of technology, PoliHack features several categories. Whether you’re passionate about web design, mobile app development, embedded systems, or just starting your tech journey, you’ll surely find a place in one of our four categories:</p>     </div>
+            </div>
+                <br>
+                <br>
+            <div class="sectiuni">
+                <div class="web">
+                    <h2 class="h2"><b>Web</b></h2>
+                    <p>Unleash your creativity in the digital realm by designing captivating websites or browser-friendly applications that push the boundaries of user experience. This category invites you to craft engaging interfaces and explore innovative design concepts that leave a lasting impact.</p> </div>
+                <div class="app">
+                    <h2 class="h2"><b>AppDev</b></h2>
+                    <p>Dive into the mobile world and bring your ideas to life with cutting-edge applications. Whether you’re developing for iOS, Android, or cross-platform environments, showcase your coding skills and redefine how users interact with technology. Transform your visions into functional and user-friendly apps!</p> </div>
+                <div class="embedded">
+                    <h2 class="h2"><b>Embedded</b></h2>
+                    <p>Explore the intriguing world of embedded systems, where you can create smart devices and pioneer advanced hardware solutions. This category empowers you to innovate and develop projects that play a vital role in shaping the ever-evolving landscape of technology. Your creations could revolutionize everyday experiences!</p>   </div>
+                <div class="junior">
+                    <h2 class="h2"><b>Junior</b></h2>
+                    <p>Designed for high school tech enthusiasts, the Junior category provides a supportive platform to explore and experiment with technology. Immerse yourself in web development, create web or embedded projects, and discover where your passion lies. Surprises await!</p>
                 </div>
-                <div>
-                    <h2>Our mission</h2>
-                    <p>Our goal is to bridge the gap between academic learning and real-world application. By offering a platform for young innovators to showcase their skills, we aim to foster a generation of tech-savvy pioneers ready to tackle the challenges of the future.</p>
+            </div>
+                <br>
+                <br>
+                <br>
+            
+            <div class="sectiuni">
+                <div class="pitch" style="width:auto">
+                    <b><p>Show us your unique perspective on real-world challenges, deliver a catchy 3-minute pitch, and your idea might just be the next winner.</p></b>
                 </div>
-                <div>
-                    <h2>What we offer</h2>
-                    <p>Networking Opportunities: An evening dedicated to networking provides participants with the opportunity to connect with our partners, opening doors to potential future collaborations.</p>
-                    <br>
-                    <p>Training: Sessions on business development and how to effectively plan and grow a startup are integral parts of the hackathon, equipping participants with essential entrepreneurial skills.</p>
-                   <br>
-                    <p>Mentorship: Throughout the event, experienced mentors are available to guide teams, offering advice and insights to help refine their projects.</p>
+                     
+                <div class="web">
+                    <p>PoliHack is more than just coding. It’s an opportunity to explore new ideas, experiment with innovative technologies, and connect with like-minded individuals. Whether you’re a beginner or a hackathon enthusiast, you’ll benefit from workshops, mentorship, and activities designed to enhance creativity and collaboration. Join us for an enriching experience focused on personal growth, teamwork, meaningful connections, and—most importantly—unparalleled fun.</p>
                 </div>
-                <div>
-                    <h2>The challenge</h2>
-                    <p>Participants are tasked with developing a tech solution, alongside a compelling presentation and a well-thought-out business plan, all within a 48-hour timeframe. All of these, based on a theme introduced at the beginning of the hackathon. This approach ensures not only the technical viability of the projects but also their market potential.</p>
-                </div>
-                <div>
-                    <h2>Join Us</h2>
-                    <p>
-                        PoliHack epitomizes the synergy achieved through collaborative endeavors, forward-thinking innovation, and unwavering dedication. We invite you to be part of this exhilarating journey, to learn and perhaps even revolutionize the way we think about technology and business.
-                    </p>
+                    
+                <div class="web">
+                    <p>This is your chance to push your limits, collaborate with awesome people, and create something incredible. Whether you’re here to win, learn, or simply have fun, our 48-hour hackathon promises an unforgettable experience. Show us your unique take on exciting real-world challenges.</p>
                 </div>
                 
-                <h2 style="text-align: center">Team</h2>
-
-                <div class="card-grid">
-                    
-                    <div class="card">
-                        <img src="/content/images/DemeanVlad.jpg" alt="Demean Vlad">
-                        <div class="card-body">
-                            <h2>Demean <br> Vlad</h2>
-                            <p class="role">Coordinator</p>
-                            <div>
-                                <a class="icon" href="mailto:demeanvlad8@gmail.com"><i class="fa fa-envelope"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="card">
-                        <img src="/content/images/AlinaZaharia_.jpg" alt="Zaharia Alina">
-                        <div class="card-body">
-                            <h2>Zaharia<br> Alina </h2>
-                            <p class="role">Co-coordinator</p>
-                            <div>
-                                <a class="icon" href="mailto:zaharia.alina13@gmail.com"><i class="fa fa-envelope"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="/content/images/ArimiaAndreea.jpg" alt="Arimia Andreea">
-                        <div class="card-body">
-                            <h2>Arimia<br> Andreea </h2>
-                            <p class="role">Co-coordinator</p>
-                            <div>
-                                <a class="icon" href="mailto:arimiaandreeastefania@gmail.com"><i class="fa fa-envelope"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="/content/images/MurariuGeorgiana.jpg" alt="Murariu Georgiana">
-                        <div class="card-body">
-                            <h2>Murariu <br> Georgiana</h2>
-                            <p class="role">Co-coordinator</p>
-                            <div>
-                                <a class="icon" href="mailto:georgiamurariu@gmail.com"><i class="fa fa-envelope"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="card">
-                        <img src="/content/images/MozacuStefania.jpg" alt="MozacuStefania">
-                        <div class="card-body">
-                            <h2>Mozacu <br> Stefania</h2>
-                            <p class="role">Co-coordinator</p>
-                            <div>
-                                <a class="icon" href="mailto:stefaniamozacu1@gmail.com"><i class="fa fa-envelope"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="card">
-                        <img src="/content/images/Turcu.jpg" alt="Turculet Stefan">
-                        <div class="card-body">
-                            <h2>Turculet<br> Stefan</h2>
-                            <p class="role">Co-coordinator</p>
-                            <div>
-                                <a class="icon" href="mailto:stefanturculet2016@gmail.com"><i class="fa fa-envelope"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="/content/images/FilimonAntonia.jpg" alt=" Filimon Antonia">
-                        <div class="card-body">
-                            <h2>Filimon<br> Antonia</h2>
-                            <p class="role">Secretary</p>
-                            <div>
-                                <a class="icon" href="mailto:antonia.af12.filimon@gmail.com"><i class="fa fa-envelope"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                   
-                    <div class="card">
-                        <img src="/content/images/TimisTraian.jpg" alt="Timis Traian">
-                        <div class="card-body">
-                            <h2>Timis<br> Traian</h2>
-                            <p class="role">Responsible BC</p>
-                            <div>
-                                <a class="icon" href="mailto:traiantimis02@gmail.com"><i class="fa fa-envelope"></i></a>
-                            </div>
-                        </div>
+                <div class="pitch" style="width: auto;">
+                    <p>Don’t miss out on this incredible opportunity. Get ready for the most entertaining hackathon of the year!<b>PoliHack.The.Future.Is.Now.</b></p>
+                </div>
+            </div>
+            </div>
+         
+                <div class="polihack">
+                    <div class="scroll-container">
+                        <img src="\assets\images\1.jpg" >
+                        <img src="\assets\images\2.jpg" >
+                        <img src="\assets\images\3.jpg" >
+                        <img src="\assets\images\4.jpg">   
+                        <img src="\assets\images\5.jpg">  
+                        <img src="\assets\images\6.jpg" >
+                        <img src="\assets\images\7.jpg" >
+                        <img src="\assets\images\8.jpg" >
+                        <img src="\assets\images\1.jpg">   
+                        <img src="\assets\images\2.jpg"> 
                     </div>
                 </div>
 
-            </section>
+                    <div class="networking">
+                        <div class="container_text text">
+                            <h1 class="h1">NETWORKING</h1>
+                            <p>The networking night is the perfect opportunity to meet other participants, mentors, and volunteers in a friendly and relaxed atmosphere. During this special event, you'll have the chance to build lasting connections, expand your professional network, and explore new collaboration opportunities. We encourage open discussions and the exchange of innovative ideas in an environment that inspires creativity and growth. Whether you're an experienced professional or an enthusiastic newcomer, we invite you to join a community dedicated to technology and innovative solutions. Come connect with passionate people, learn, and explore new perspectives while building impactful relationships!</p>
+                        </div>
 
-        </article>
+                        <div class="scroll-container">
+                                <img src="\assets\images\n1.jpg" >
+                                <img src="\assets\images\n2.jpg" >
+                                <img src="\assets\images\n3.jpg" >
+                                <img src="\assets\images\n4.jpg">   
+                                <img src="\assets\images\n5.jpg">  
+                                <img src="\assets\images\n1.jpg" >
+                                <img src="\assets\images\n2.jpg" >
+                                <img src="\assets\images\n3.jpg" >
+                                <img src="\assets\images\n4.jpg">   
+                                <img src="\assets\images\n5.jpg"> 
+                        </div>
+                    </div>
+                  
+                        <br>
+            <br>
+            <div class="team">
+                <h2 class="h1"> <B>PoliHack Team</B></h2>
+            </div>
+            <br>
+            <br>
+            
+                <div class="card-grid ">
+                    
+                    <div class="container">
+                        <img src="/assets/images/team/andreeea.png" alt="Arimia Andreea" >
+                        <div class="card-body" >
+                            <h2 class="h2">Arimia Andreea</h2>
+                            <p class="role">Coordinator
+                            </p>
+                             <div class="links">
+                                 <a class="icon" href="	https://www.facebook.com/andreea.arimia		" target="_blank"><i class="fa fa-facebook"></i></a>
+                                 <a class="icon" href="https://www.instagram.com/andreeaa_stefaniaa/		" target="_blank"><i class="fa fa-instagram"></i></a>
+                             </div>
+                        </div>
+                    </div>
+
+
+                    
+                    <div class="container">
+                        <img src="/assets/images/team/filip.png" alt="FilipCristian">
+                        <div class="card-body">
+                            <h2 class="h2">Filip Cristian</h2>
+                            <p class="role">BC Responsible</p>
+                            <div class="links">
+                                 <a class="icon" href="https://www.facebook.com/filip.cristi.37		" target="_blank"><i class="fa fa-facebook"></i></a>
+                                 <a class="icon" href="https://www.instagram.com/filip_cristi/		" target="_blank"><i class="fa fa-instagram"></i></a>
+                             </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <img src="/assets/images/team/maria.png" alt="CordeaMaria">
+                        <div class="card-body ">
+                            <h2 class="h2">Cordea Maria</h2>
+                            <p class="role">Secretary</p>
+
+                            <div class="links">
+                                 <a class="icon" href="https://www.facebook.com/profile.php?id=100014599725620		" target="_blank"><i class="fa fa-facebook"></i></a>
+                                 <a class="icon" href="https://www.instagram.com/cordea_maria/profilecard/?igsh=amFya25hd2JzY3pm		" target="_blank"><i class="fa fa-instagram"></i></a>
+                             </div>
+                        </div>
+                    </div>
+
+                     <div class="container">
+                        <img src="/assets/images/team/diana.png" alt="Clim Diana">
+                        <div class="card-body">
+                            <h2 class="h2">Clim Diana</h2>
+                            <p class="role">Co-coordinator</p>
+
+                            <div class="links">
+                                 <a class="icon" href="https://www.facebook.com/diana.clim.1		" target="_blank"><i class="fa fa-facebook"></i></a>
+                                 <a class="icon" href="https://www.instagram.com/dianaa_clim?igsh=MXJrdWRubjhuOTdx&utm_source=qr		" target="_blank"><i class="fa fa-instagram"></i></a>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <img src="/assets/images/team/casiana.png" alt="Hutopila Casiana">
+                        <div class="card-body ">
+                            <h2 class="h2">Hutopila Casiana</h2>
+                            <p class="role">Co-coordinator</p>
+
+                            <div class="links">
+                                 <a class="icon" href="	https://www.facebook.com/maria.casiana19		" target="_blank"><i class="fa fa-facebook"></i></a>
+                                 <a class="icon" href="https://www.instagram.com/casiana__maria/		" target="_blank"><i class="fa fa-instagram"></i></a>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <img src="/assets/images/team/cristina.png" alt="Michliuc Cristina">
+                        <div class="card-body ">
+                            <h2 class="h2">Michliuc Cristina</h2>
+                            <p class="role">Co-coordinator</p>
+
+                            <div class="links">
+                                 <a class="icon" href="	https://www.facebook.com/share/NYSVqKNE94xir6t1/		" target="_blank"><i class="fa fa-facebook"></i></a>
+                                 <a class="icon" href="https://www.instagram.com/md_criss?igsh=c3ZuOXZucWY4bG9u		" target="_blank"><i class="fa fa-instagram"></i></a>
+                             </div>
+                        </div>
+                    </div>
+                     <div class="container">
+                        <img src="/assets/images/team/alina.png" alt="ZahariaAlina">
+                        <div class="card-body" >
+                            <h2 class="h2">Zaharia Alina</h2>
+                            <p class="role">Co-coordinator</p>
+
+                            <div class="links">
+                                 <a class="icon" href="https://www.facebook.com/zaharia.alina13		" target="_blank"><i class="fa fa-facebook"></i></a>
+                                 <a class="icon" href="https://www.instagram.com/alinaazaharia?igsh=Nm0wOHlkbmxheWU2&utm_source=qr		" target="_blank"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="container">
+                        <img src="/assets/images/team/dutu1.png" alt="OrmindeanVlad">
+                        <div class="card-body ">
+                            <h2 class="h2">Ormindean Vlad</h2>
+                            <p class="role">Tehnic Responsabile</p>
+
+                            <div class="links">
+                                 <a class="icon" href="https://www.facebook.com/vlad.ormindean.1/		" target="_blank"><i class="fa fa-facebook"></i></a>
+                                 <a class="icon" href="https://www.instagram.com/__vld._/		" target="_blank"><i class="fa fa-instagram"></i></a>
+                             </div>
+                        </div>
+                    </div>
+
+                     <div class="container">
+                        <img src="/assets/images/team/florea.png" alt="FloreaAlexandru">
+                        <div class="card-body ">
+                            <h2 class="h2">Florea Alexandru</h2>
+                            <p class="role">PR Responsabile</p>
+
+                            <div class="links">
+                                 <a class="icon" href="facebook.com/flowerman13		" target="_blank"><i class="fa fa-facebook"></i></a>
+                                 <a class="icon" href="instagram.com/alexandruflorea13		" target="_blank"><i class="fa fa-instagram"></i></a>
+                             </div>
+                        </div>
+                    </div>
+
+                </div>
+
+        
     </main>
 
-    {{/post}}
+    {{/post}} 

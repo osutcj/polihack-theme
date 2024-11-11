@@ -4,403 +4,384 @@
 <link rel="stylesheet" type="text/css" href="{{asset "assets/css/sponsori.css"}}" />
 <link rel="stylesheet" type="text/css" href="{{asset "assets/css/index.css"}}" />
 <link rel="stylesheet" type="text/css" href="{{asset "assets/css/screen.css"}}" />
+<link rel="stylesheet" type="text/css" href="{{asset "assets/css/carousel-premii.css"}}" />
+<style>
+    /* Slideshow container */
+.slideshow-container {
+  width: 70%;
+  position: relative;
+  margin: auto;
+  background-color: #1e1e1e;
+  height: 50%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  background-color: #1e1e1e;
+  width: 100%;
+  text-align: center;
+  height: 50%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #1e1e1e;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #1e1e1e;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+</style>
 
 
-
-
-<main id="site-main" style="z-index: 200; background-color: white;" class="site-main outer" style="width: 100%; overflow:">
-<img class="banner_ph" src="{{img_url @site.cover_image}}" alt="" />
+<main id="site-main" style="z-index: 200; background-color: #1e1e1e;" class="site-main outer" style="width: 100%; overflow:">
+<img class="banner_ph" src="/assets/images/BACKGROUND SITE 1920x1080-01.jpg" alt="" />
     <div class="py-5" style="
-                background-color: var(--bs-gray-100);
+                background-color: #1e1e1e;
                 color: var(--bs-gray-100);
             ">
-            <div class="container" style="
-                    background-color: var(--bs-gray-100);
-                    color: var(--bs-gray-900);
-                    ">
-                <div class="row">
-                    <div class="pt-0 pt-md-5 col-sm-12 col-md-6 d-flex flex-column p-5">
-                        <div class="pt-0 pt-md-5 p-5" style="
-                                color: var(--bs-gray-900);
-                                border-radius: 16px;
-                            ">
-                            
-                            <p class="fs-2 fw-bold">
-                               Coding enthusiasts, embark on a coding adventure with us and unlock the door to innovation! If you’re fueled by bright ideas and ready to take your first steps into the world of coding and entrepreneurship, then join us in shaping the future at our hackathon!
 
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 d-flex flex-column">
-                        <div class="p-5 special-shadow move-up-on-hover" style="
-                                background-color: var(--bs-gray-100);
-                                color: var(--bs-gray-900);
-                                border-radius: 16px;
-                                background-image: url('/content/images/ph2.webp');  
-                                background-size: cover;
-                                background-repeat: no-repeat;
-                                max-width: 100%;
-                                width: 500px;
-                                height: 250px;
-                            ">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row flex-column-reverse flex-md-row mt-n5 mt-md-0">
-                    <div class="col-sm-12 col-md-6 d-flex justify-content-center align-items-center flex-column">
-                        <div class="p-5 special-shadow move-up-on-hover" style="
-                                background-color: var(--bs-gray-100);
-                                color: var(--bs-gray-900);
-                                border-radius: 16px;
-                                background-image: url('/content/images/ph3.webp');
-                                background-size: cover;
-                                background-repeat: no-repeat;
-                                max-width: 100%;
-                                width: 500px;
-                                height: 250px;
-                            ">
-                        </div>
-                    </div>
-                    <div
-                        class="pt-0 pt-md-5 col-sm-12 col-md-6 d-flex justify-content-center align-items-center flex-column p-5">
-                        <div class="pt-0 pt-md-5 p-5" style="
-                                color: var(--bs-gray-900);
-                                border-radius: 16px;
-                            ">
-
-                            <p class="fs-2  fw-bold">
-                               PoliHack’s mission is  to unite students and high schoolers who have a passion for technology. In a dynamic 48-hour sprint, participants refine ideas, pushing innovation's limits. Join a collective of forward-thinkers, where creativity knows no bounds!
-
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row flex-column-reverse flex-md-row mt-n5 mt-md-0">
-                    <div class="col-sm-12 col-md-6 d-flex justify-content-center align-items-center flex-column">
-                        <div class="p-5 special-shadow move-up-on-hover" style="
-                                background-color: var(--bs-gray-100);
-                                color: var(--bs-gray-900);
-                                border-radius: 16px;
-                                background-image: url('/content/images/ph3.webp');
-                                background-size: cover;
-                                background-repeat: no-repeat;
-                                max-width: 100%;
-                                width: 500px;
-                                height: 250px;
-                            ">
-                        </div>
-                    </div>
-                    <div
-                        class="pt-0 pt-md-5 col-sm-12 col-md-6 d-flex justify-content-center align-items-center flex-column p-5">
-                        <div class="pt-0 pt-md-5 p-5" style="
-                                color: var(--bs-gray-900);
-                                border-radius: 16px;
-                            ">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor"
-                                class="bi bi-eyeglasses align-self-start mb-5" viewBox="0 0 16 16">
-                                <path
-                                    d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zm2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A1.993 1.993 0 0 0 8 6c-.532 0-1.016.208-1.375.547zM14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" />
-                            </svg>
-                            <p class="fs-2 fw-bold">
-                               PoliHack’s mission is  to unite students and high schoolers who have a passion for technology. In a dynamic 48-hour sprint, participants refine ideas, pushing innovation's limits. Join a collective of forward-thinkers, where creativity knows no bounds!
-
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="px-5 py-5" style="
-                background-color: var(--bs-gray-100);
+        <div class="py-5" style="
+                background-color: #1e1e1e;
                 border-top: 1px solid var(--bs-gray-500);
                 border-bottom: 1px solid var(--bs-gray-500);
+                width:70%;
+                margin:0 auto;
             ">
-            <div class="container">
-                <h1 style="text-align: center; color: var(--bs-gray-900); margin-bottom: 3vw;">
-                     Networking 
+
+            <p class="intro-text">Now in its 16th edition, PoliHack is the bi-annual hackathon that challenges university and high school students to push the limits of their creativity and technical skills by developing innovative solutions in one of four categories: Embedded, AppDev, Web, and Junior.</p>
+            <p class="intro-text second-paragraph">Organized by the Student Organization of the Technical University of Cluj-Napoca, PoliHack aims to encourage participants to collaborate with esteemed mentors from both industry and academia, offering them an authentic experience similar to what they would encounter in big companies.</p>
+
+            <div>
+                <h1 class="main-heading">
+                    <b>PoliHack. The.Future.Is.Now.</b>
                 </h1>
-                 <div  style="
-                background-color: var(--bs-gray-100);
-                color: var(--bs-gray-100);
-            ">
-            <div class="container" style="
-                    background-color: var(--bs-gray-100);
-                    color: var(--bs-gray-900);
-                    ">
-                <div class="pt-0  row">
-                        <div class=" mt-5 col-sm-12 col-md-3 d-flex j align-items-center flex-column">
-                            <div class="mb-5 special-shadow move-up-on-hover" style="
-                                    background-color: var(--bs-gray-100);
-                                    color: var(--bs-gray-900);
-                                    border-radius: 16px;
-                                    background-image: url('/assets/images/networking1.jpeg');  
-                                    background-size: cover;
-                                    background-repeat: no-repeat;
-                                    max-width: 100%;
-                                    width: 350px;
-                                    height: 175px;
-                                ">
-                            </div>
-                            <div class="mt-5 special-shadow move-up-on-hover" style="
-                                    background-color: var(--bs-gray-100);
-                                    color: var(--bs-gray-900);
-                                    border-radius: 16px;
-                                    background-image: url('/assets/images/networking2.jpeg');  
-                                    background-size: cover;
-                                    background-repeat: no-repeat;
-                                    max-width: 100%;
-                                    width: 350px;
-                                    height: 175px;
-                                ">
-                            </div>
-                
-                        </div>
-                        
-                        <div class=" pt-md- col-sm-12 col-md-6 d-flex flex-column p-5">
-                            <div class="pt-0 pt-md-5 p-5" style="
-                                    color: var(--bs-gray-900);
-                                    border-radius: 16px;
-                                ">
-                                <p class="fs-2 ">
-                                This event provides an ideal chance to engage with fellow participants and mentors in a laid-back and social setting. Get ready to forge new connections and nurture lasting relationships that will enhance your hackathon experience. Embrace the opportunity to network, share ideas, and collaborate in an atmosphere that fosters creativity and innovation. Whether you're a seasoned hacker or a newcomer, this gathering offers a platform to learn, grow, and connect with like-minded individuals passionate about technology and problem-solving. Seize the moment to expand your network, exchange knowledge, and embark on a journey of exploration and discovery together with your peers.
-
-                                </p>
-                            </div>
-                        </div>
-                        <div class="mt-5 col-sm-12 col-md-3 d-flex  flex-column" style="margin-top:0px">
-                            <div class="mb-5 special-shadow move-up-on-hover" style="
-                                    background-color: var(--bs-gray-100);
-                                    color: var(--bs-gray-900);
-                                    border-radius: 16px;
-                                    background-image: url('/assets/images/networking3.jpeg');
-                                    background-size: cover;
-                                    background-repeat: no-repeat;
-                                    max-width: 100%;
-                                    width: 350px;
-                                    height: 175px;
-                                ">
-                            </div>
-                            <div class="mt-5  special-shadow move-up-on-hover" style="
-                                    background-color: var(--bs-gray-100);
-                                    color: var(--bs-gray-900);
-                                    border-radius: 16px;
-                                    background-image: url('/assets/images/networking4.jpeg');
-                                    background-size: cover;
-                                    background-repeat: no-repeat;
-                                    max-width: 100%;
-                                    width: 350px;
-                                    height: 175px;
-                                ">
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
+    </div>
+    <div class="counter-flex">
+        <div class="counter-flex-text">
+         <div id="counter" class="counter">2200</div>
+        <p class="counter-text">participanți</p>
+        </div>
+         <div class="counter-flex-text">
+         <div id="counter2" class="counter2">0</div>
+        <p class="counter-text">mentori</p>
+         </div>
+          <div class="counter-flex-text">
+         <div id="counter3" class="counter3">0</div>
+        <p class="counter-text">ediții</p>
+        </div>
+    </div>
+    
+<br>
+<br>
+<br>
+<div>
+                <h1 class="main-heading" style="border-top: 1px solid var(--bs-gray-500);">
+                    <b>PREMII</b>
+                </h1>
+            </div>
+
+ <div class="slideshow-container" style="
+                background-color: #1e1e1e; 
+            ">
+    <div class="mySlides">
+        <h1 class="main-heading">
+            <b>Gala Tineretului din România 2024</b>
+            </h1>
+        <p class="text-center">Premiul al II-lea la Categoria Antreprenoriat și Inovare</p>
+    </div>
+      <div class="mySlides">
+        <h1 class="main-heading">
+            <b>Gala Tineretului Clujean 2023</b>
+            </h1>
+        <p class="text-center">Premiul al II-lea la Categoria Antreprenoriat și Inovare</p>
+    </div>
+      <div class="mySlides">
+        <h1 class="main-heading">
+            <b>Gala Tineretului Clujean 2021</b>
+            </h1>
+        <p class="text-center">Premiul de popularitate</p>
+    </div>
+      <div class="mySlides">
+        <h1 class="main-heading">
+            <b>Gala Tineretului Clujean 2019-2020</b>
+            </h1>
+        <p class="text-center">Premiul al III-lea la Categoria Formare Profesională</p>
+    </div>
+      <div class="mySlides">
+        <h1 class="main-heading">
+            <b>Gala Binelui 2024</b>
+            </h1>
+        <p class="text-center">Premiul la Categoria Antreprenoriat</p>
+    </div>
+
+    <!-- Navigation buttons -->
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+
+<!-- Dots for slide indicators -->
+<div style="text-align: center;">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+    <span class="dot" onclick="currentSlide(4)"></span> 
+    <span class="dot" onclick="currentSlide(5)"></span> 
+</div>
+</main>
+
+
+{{!script pentru primul counter}}
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const counterElement = document.getElementById("counter");
+
+    // Phase 1: From 2200 to 2490 in 5 seconds
+    const startNumber1 = 2200;
+    const targetNumber1 = 2500;
+    const duration1 = 5000;           // 5 seconds
+    const incrementTime1 = 20;        // Interval in ms for Phase 1
+    const totalIncrements1 = duration1 / incrementTime1;
+    const increment1 = (targetNumber1 - startNumber1) / totalIncrements1;
+
+    let currentNumber = startNumber1;
+
+    // Phase 1 Counter Function
+    function updateCounterPhase1() {
+        currentNumber += increment1;
+
+        if (currentNumber >= targetNumber1) {
+            counterElement.textContent = targetNumber1 + "+"; // End at 2500+
+        } else {
+            counterElement.textContent = Math.floor(currentNumber);
+            setTimeout(updateCounterPhase1, incrementTime1);
+        }
+    }
+
+    // Start the first phase
+    updateCounterPhase1();
+});
+</script>
+
+{{!script pentru al doilea counter}}
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const counterElement = document.getElementById("counter2");
+    const startNumber = 0;      // Numărul de început
+    const targetNumber = 200;     // Numărul final
+    const duration = 5000;        // Durata în milisecunde (5 secunde)
+    const intervalTime = 20;       // Timpul între incrementări (20 ms)
+    
+    let currentNumber = startNumber;
+    const increment = (targetNumber - startNumber) / (duration / intervalTime);
+
+    function updateCounter() {
+        currentNumber += increment;
         
-        <div class="py-5" style="
-                background-color: var(--bs-gray-100);
-                border-top: 1px solid var(--bs-gray-500);
-                border-bottom: 1px solid var(--bs-gray-500);
-            ">
-            <div class="container" style="background-color: var(--bs-gray-100);">
-                <div class="row align-items-start">
-                    <div>
-                        <h1 style="text-align: center; color: var(--bs-gray-900); margin-bottom: 3vw;">
-                            La ce categorii te poți înscrie?
-                        </h1>
-                    </div>
+        if (currentNumber >= targetNumber) {
+            counterElement.textContent = targetNumber + "+";
+        } else {
+            counterElement.textContent = Math.floor(currentNumber);  // Arătăm doar partea întreagă
+            setTimeout(updateCounter, intervalTime);                 // Continuăm incrementarea la fiecare 20ms
+        }
+    }
 
-                    <!--CARD 1 -->
-                    <div class="col-sm-12 col-md-3 container-center">
-                        <div>
-                            <div class="container-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-                                    class="bi bi-code-slash svg-background" viewBox="0 0 16 16" style="color: white;">
-                                    <path
-                                        d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z" />
-                                </svg>
-                            </div>
-                            <div class="card-body">
-                                <h1 class="card-title">Web</h1>
-                                <p class="card-text">
-                                    Unleash your creativity in the digital realm by designing captivating websites or any browser-friendly applets that push the boundaries of user experience.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+    updateCounter();
+});
+</script>
 
-                    <!--CARD 2 -->
-                    <div class="col-sm-12 col-md-3 container-center">
-                        <div>
-                            <div class="container-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-                                    class="bi bi-phone svg-background" viewBox="0 0 16 16">
-                                    <path
-                                        d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z" />
-                                    <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
-                                </svg>
-                            </div>
-                            <div class="card-body">
-                                <h1 class="card-title">AppDev</h1>
-                                <p class="card-text">
-                                    Dive into the mobile world and bring your ideas to life with innovative applications. Whether it's for iOS, Android, or cross-platform environments, showcase your coding prowess and redefine the way we interact with technology.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+{{!script pentru al treilea counter}}
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const counterElement = document.getElementById("counter3");
+    const startNumber = 0;      // Numărul de început
+    const targetNumber = 15;     // Numărul final
+    const duration = 5000;        // Durata în milisecunde (5 secunde)
+    const intervalTime = 20;       // Timpul între incrementări (20 ms)
+    
+    let currentNumber = startNumber;
+    const increment = (targetNumber - startNumber) / (duration / intervalTime);
 
-                    <!--CARD 3 -->
-                    <div class="col-sm-12 col-md-3 container-center">
-                        <div>
-                            <div class="container-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-                                    class="bi bi-cpu svg-background" viewBox="0 0 16 16">
-                                    <path
-                                        d="M5 0a.5.5 0 0 1 .5.5V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2A2.5 2.5 0 0 1 14 4.5h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14a2.5 2.5 0 0 1-2.5 2.5v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14A2.5 2.5 0 0 1 2 11.5H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2A2.5 2.5 0 0 1 4.5 2V.5A.5.5 0 0 1 5 0zm-.5 3A1.5 1.5 0 0 0 3 4.5v7A1.5 1.5 0 0 0 4.5 13h7a1.5 1.5 0 0 0 1.5-1.5v-7A1.5 1.5 0 0 0 11.5 3h-7zM5 6.5A1.5 1.5 0 0 1 6.5 5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3zM6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z" />
-                                </svg>
-                            </div>
-                            <div class="card-body">
-                                <h1 class="card-title">Embedded</h1>
-                                <p class="card-text">
-                                    Explore the fascinating world of embedded systems, where you can create smart devices and lead the way in developing state-of-the-art hardware solutions. Your innovations will play a crucial role in shaping the constantly evolving landscape of technology.
+    function updateCounter() {
+        currentNumber += increment;
+        
+        if (currentNumber >= targetNumber) {
+            counterElement.textContent = targetNumber;
+        } else {
+            counterElement.textContent = Math.floor(currentNumber);  // Arătăm doar partea întreagă
+            setTimeout(updateCounter, intervalTime);                 // Continuăm incrementarea la fiecare 20ms
+        }
+    }
 
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+    updateCounter();
+});
+</script>
 
-                    <!--CARD 4 -->
-                    <div class="col-sm-12 col-md-3 container-center">
-                        <div>
-                            <div class="container-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-                                    class="bi bi-emoji-laughing svg-background" viewBox="0 0 16 16">
-                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                    <path
-                                        d="M12.331 9.5a1 1 0 0 1 0 1A4.998 4.998 0 0 1 8 13a4.998 4.998 0 0 1-4.33-2.5A1 1 0 0 1 4.535 9h6.93a1 1 0 0 1 .866.5zM7 6.5c0 .828-.448 0-1 0s-1 .828-1 0S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 0-1 0s-1 .828-1 0S9.448 5 10 5s1 .672 1 1.5z" />
-                                </svg>
-                            </div>
-                            <div class="card-body">
-                                <h1 class="card-title">Junior</h1>
-                                <p class="card-text">
-                                    For high school tech enthusiasts, the Junior category provides a platform to explore and experiment with technology. Dive into the world of web development, create web or embedded projects and embark on coding projects that reflect your passion for innovation.
-                            </div>
-                        </div>
-                    </div>
+{{! script pentru carousel }}
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
 
-                </div>
-            </div>
-        </div>
-        <div style="border-bottom: 1px solid var(--bs-gray-500);">
-            <h1 style="text-align: center; color: var(--bs-gray-900); margin-top: 1vw;">Testimonials</h1>
-            {{> carousel-testimonials}}
-        </div>
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-        <div style="border-bottom: 1px solid var(--bs-gray-500);">
-            <h1 style="text-align: center;">Past Editions</h1>
-            <div class="inner posts">
-                <div class="post-feed">
-                    {{#foreach posts}}
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
-                    {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
-                    {{> "post-card"}}
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
 
-                    {{/foreach}}
-                </div>
-            </div>
-        </div>
-        <div class="py-5" style="
-                background-color: var(--bs-gray-100);
-                border-top: 1px solid var(--bs-gray-500);
-                border-bottom: 1px solid var(--bs-gray-500);
-            ">
-            <div class="container" style="background-color: var(--bs-gray-100);">
-                <div class="row align-items-start" >
-                    <div>
-                        <h1 style="text-align: center; color: var(--bs-gray-900); ">
-                            The winners of the previous edition
-                        </h1>
-                    </div>
+    <script>
+// JavaScript for scroll detection (desktop only)
+document.addEventListener('DOMContentLoaded', () => {
+    const header = document.querySelector('.gh-head');
 
+    const handleScroll = () => {
+        // Only apply the scroll effect if the viewport width is above 900px
+        if (window.innerWidth >= 900) {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        } else {
+            // Remove the 'scrolled' class on mobile to ensure a consistent look
+            header.classList.remove('scrolled');
+        }
+    };
 
-                    <div class = "card-category" style="flex-wrap:wrap; justify-content:space-around">
-                        <div class = "card-bg">
-                            
-                            
-                            <div class="container-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-                                    class="bi bi-cpu svg-background" viewBox="0 0 16 16">
-                                    <path
-                                        d="M5 0a.5.5 0 0 1 .5.5V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2A2.5 2.5 0 0 1 14 4.5h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14a2.5 2.5 0 0 1-2.5 2.5v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14A2.5 2.5 0 0 1 2 11.5H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2A2.5 2.5 0 0 1 4.5 2V.5A.5.5 0 0 1 5 0zm-.5 3A1.5 1.5 0 0 0 3 4.5v7A1.5 1.5 0 0 0 4.5 13h7a1.5 1.5 0 0 0 1.5-1.5v-7A1.5 1.5 0 0 0 11.5 3h-7zM5 6.5A1.5 1.5 0 0 1 6.5 5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3zM6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z" />
-                                </svg>
-                            </div>
-                             <h2 class = "card-title" style="font-size:2.5rem; margin-top: 0px;">Embedded</h2>
-                             <div class = "card-img img-73" style="margin-top:15px; margin-bottom:auto; border-radius:15%"></div>
-                             <h2 class = "card-title">Bit Bangers</h2>
-                            <p class="card-title" style="font-size:large">project:<br> -WASTE-</p>
-                        </div>
-                        <div class = "card-bg">
-                             <div class="container-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-                                    class="bi bi-code-slash svg-background" viewBox="0 0 16 16" style="color: white;">
-                                    <path
-                                        d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z" />
-                                </svg>
-                            </div>
-                             <h2 class = "card-title" style="font-size:2.5rem; margin-top: 0px;">WebDev</h2>
-                            <div class = "card-img img-72" style="margin-top:15px; margin-bottom:auto; border-radius:15%"></div>
-                            <h2 class = "card-title">5ToCode</h2>
-                             <p class="card-title" style="font-size:large">project:<br> -CliniConnect-</p>
-                        </div>
-                        <div class = "card-bg">
-                            <div class="container-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-                                    class="bi bi-phone svg-background" viewBox="0 0 16 16">
-                                    <path
-                                        d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z" />
-                                    <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
-                                </svg>
-                            </div>
-                             <h2 class = "card-title" style="font-size:2.5rem; margin-top: 0px;">AppDev</h2>
-                            <div class = "card-img img-71" style="margin-top:15px; margin-bottom:auto; border-radius:15%"></div>
-                            <h2 class = "card-title">we-qt</h2>
-                            
-                            <p class="card-title" style="font-size:large">project:<br> -DOC-QT-</p>
-                        </div>
-                        <div class = "card-bg">
-                            <div class="container-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-                                    class="bi bi-phone svg-background" viewBox="0 0 16 16">
-                                    <path
-                                        d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z" />
-                                    <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
-                                </svg>
-                            </div>
-                             <h2 class = "card-title" style="font-size:2.5rem; margin-top: 0px;">Junior</h2>
-                            <div class = "card-img img-70" style="margin-top:15px; margin-bottom:auto;border-radius:15%"></div>
-                            <h2 class = "card-title">ProjectCloud4</h2>
-                            <p class="card-title" style="font-size:large">project: <br>-ATRIS-</p>
-                            
-                        </div>
-                    </div>
+    // Add the scroll event listener
+    window.addEventListener('scroll', handleScroll);
 
+    // Check on window resize as well
+    window.addEventListener('resize', handleScroll);
+});
 
+document.querySelector('a[href^="#"]').addEventListener("click", function(event) {
+    event.preventDefault();
 
+    const targetId = this.getAttribute("href").substring(1);
+    const targetElement = document.getElementById(targetId);
 
+    window.scrollTo({
+        top: targetElement.offsetTop,
+        behavior: "smooth"
+    });
+});
+    </script>
 
-        <div style="padding-bottom: 40px;">
-            <h1 style="text-align:center;">Where will it take place?</h1>
-            <div class="custom-map">
-                <center>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2732.087941493188!2d23.605760115602102!3d46.78287147913863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47490c1cf36e29af%3A0xca220d2ddd6625ea!2sCluj%20Business%20Campus!5e0!3m2!1sro!2sro!4v1667338016320!5m2!1sro!2sro"
-                        width="80%" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                        tabindex="0"></iframe>
-                </center>
-            </div>
-        </div>
+<script>
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.mySlides');
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.remove('active');
+            if (i === index) {
+                slide.classList.add('active');
+            }
+        });
+    }
+
+    function plusSlides(n) {
+        slideIndex = (slideIndex + n + slides.length) % slides.length;
+        showSlide(slideIndex);
+    }
+
+    function currentSlide(n) {
+        slideIndex = n - 1;
+        showSlide(slideIndex);
+    }
+
+    // Auto-show the first slide on load
+    showSlide(slideIndex);
+</script>
 
 
 </main>
