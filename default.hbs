@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html lang="{{@site.locale}}">
-    
+
+    <style>
+        .footer-bottom a{
+    color: inherit;
+}
+
+.footer-bottom-contact{
+    padding-bottom: 40px;
+    text-align: justify;
+}
+.footer-bottom-contact b{
+    color:#ffffff
+}
+.footer-bottom-contact h3{
+    color:#ffffff;
+}
+    </style>
+
 
 <head>
     {{!-- Basic meta - advanced meta is output with {ghost_head} below --}}
@@ -9,7 +26,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
 
     {{!-- Theme assets - use the {asset} helper to reference styles & scripts,
     this will take care of caching and cache-busting automatically --}}
@@ -48,36 +67,7 @@
             <div class="gh-head-menu">
                 {{navigation}}
             </div>
-            <div class="gh-head-actions">
-                <div class="gh-social" style="display: flex; justify-content: center; align-items: center;">
-                    {{#if @site.facebook}}
-                        <a class="gh-social-facebook" href="{{facebook_url @site.facebook}}" title="Facebook" target="_blank" rel="noopener">
-                            <i class="fa fa-facebook" style="border: 3px solid white; border-radius: 50px; padding-top: 3px; padding-bottom: 1px; padding-right: 6px; padding-left: 5px; "></i>
-                        </a>
-                    {{/if}}
-                    {{#if @site.twitter}}
-                        <a class="gh-social-twitter" href="{{twitter_url @site.twitter}}" title="Twitter" target="_blank" rel="noopener">{{> "icons/twitter"}}</a>
-                    {{/if}}
-                    <a class="gh-social-instagram" href="https://www.instagram.com/polihack.osut/" title="Instagram" target="_blank">
-                        <i class="fa fa-instagram" style="font-size: 30px;"></i>
-                    </a>
-                </div>
-                <button style="background-color: white; color: black; border:none; font-size: 14px; box-shadow:none; border-radius:8px;" type="button" ><a href="https://forms.gle/ZhjEskqkdkGM5S3u8">
-                    Register
-                </a></button>
-                {{!
-                <div class="dropdown" >
-                    <button style="background-color: white; color: black; border:none; font-size: 14px; box-shadow:none; border-radius:8px;" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        Register
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="font-size: 16px; min-width: 15rem;">
-                        <li style="padding-left: 0;"><a class="dropdown-item" target="_blank" href="https://forms.gle/ZhjEskqkdkGM5S3u8">Student</a></li>
-                        <li style="padding-left: 0;"><a class="dropdown-item" target="_blank" href="https://forms.gle/ZhjEskqkdkGM5S3u8">Junior</a></li>
-                        <li style="padding-left: 0;"><a class="dropdown-item" target="_blank" href="https://forms.gle/mYgaqFjc7U1iwbzr5">Waiting List</a></li>
-                    </ul>
-                </div>
-                }}
-            </div>
+
         </nav>
     </header>
 
@@ -87,15 +77,37 @@
     </div>
 
     {{!-- The global footer at the very bottom of the screen --}}
-    <footer class="site-footer outer" style="background-color: black; z-index: 200; margin-top: 0; padding-top: 40px;">
-        <div class="inner">
-            <section class="copyright"><a href="{{@site.url}}">{{@site.title}}</a> &copy; {{date format="YYYY"}}</section>
-            <nav class="site-footer-nav">
-                {{navigation type="secondary"}}
-            </nav>
-            <div><a href="https://ghost.org/" target="_blank" rel="noopener">Powered by Ghost</a></div>
+
+    <footer class="footer">
+    <div class="footer-content">
+        <div class="footer-logo">
+            <a href="https://www.utcluj.ro/"><img src="/assets/images/ut alb-01(1).png" alt="Logo" /></a>
+            <a href="https://osut.org/"><img src="/assets/images/OSUT alb.png" alt="Logo" /></a>
         </div>
-    </footer>
+        <div class="footer-social">
+            <a href="https://www.facebook.com/PoliHack.OSUT"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/polihack.osut/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@polihack.osut"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.linkedin.com/in/polihack-osutcj-6b767a335/ "><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:polihackosutcj@gmail.com"><i class="fas fa-envelope"></i></a>
+
+        </div>
+    </div>
+    <hr />
+    <div class="footer-bottom">
+        <a href="https://polihack.osut.org/"><img src="/assets/images/logo_alb-01 (1).png" alt="Logo" /></a>
+    <div class="footer-bottom-contact">
+        <h3 style="text-align: center; margin-left: 0px;">Contact:</h3>
+        <p><b>Filip Cristian - BC Responsible</b></p>
+        <p>Phone Number: <i>0760993125</i></p>
+        <p>Email: <a href="mailto:cristifilip2002@gmail.com">cristifilip2002@gmail.com</a></p>
+        <p><b>Arimia Andreea - Coordinator</b></p>
+        <p>Phone Number: <i>0762385168</i></p>
+        <p>Email: <a href="mailto:arimiaandreeastefania@gmail.com">arimiaandreeastefania@gmail.com</a></p>
+    </div>
+
+</footer>
+
 
 </div>
 {{!-- /.viewport --}}
@@ -118,7 +130,43 @@ $(document).ready(function () {
     $(".gh-content").fitVids();
 });
 </script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const header = document.querySelector('.gh-head');
 
+    const handleScroll = () => {
+        // Only apply the scroll effect if the viewport width is above 900px
+        if (window.innerWidth >= 900) {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        } else {
+            // Remove the 'scrolled' class on mobile to ensure a consistent look
+            header.classList.remove('scrolled');
+        }
+    };
+
+    // Add the scroll event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Check on window resize as well
+    window.addEventListener('resize', handleScroll);
+});
+
+document.querySelector('a[href^="#"]').addEventListener("click", function(event) {
+    event.preventDefault();
+
+    const targetId = this.getAttribute("href").substring(1);
+    const targetElement = document.getElementById(targetId);
+
+    window.scrollTo({
+        top: targetElement.offsetTop,
+        behavior: "smooth"
+    });
+});
+    </script>
 {{!-- Ghost outputs required functional scripts with this tag - it should always be the last thing before the closing body tag --}}
 {{ghost_foot}}
 
