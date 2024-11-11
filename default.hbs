@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{@site.locale}}">
+<<<<<<< HEAD
     <style>
         .footer-bottom a{
     color: inherit;
@@ -17,6 +18,10 @@
 }
     </style>
 
+=======
+    
+
+>>>>>>> 6b7227a05bd81bfa40a63d2cadfe7ad98185e80f
 <head>
     {{!-- Basic meta - advanced meta is output with {ghost_head} below --}}
     <title>{{meta_title}}</title>
@@ -24,7 +29,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<<<<<<< HEAD
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+=======
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+>>>>>>> 6b7227a05bd81bfa40a63d2cadfe7ad98185e80f
 
     {{!-- Theme assets - use the {asset} helper to reference styles & scripts,
     this will take care of caching and cache-busting automatically --}}
@@ -63,6 +72,7 @@
             <div class="gh-head-menu">
                 {{navigation}}
             </div>
+<<<<<<< HEAD
             {{!--<div class="gh-head-actions">
                 
                 <button style="background-color: white; color: black; border:none; font-size: 14px; box-shadow:none; border-radius:8px;" type="button" ><a href="https://forms.gle/ZhjEskqkdkGM5S3u8">
@@ -81,6 +91,38 @@
                 </div>
                 }}
             </div>--}}
+=======
+            <div class="gh-head-actions">
+                <div class="gh-social" style="display: flex; justify-content: center; align-items: center;">
+                    {{#if @site.facebook}}
+                        <a class="gh-social-facebook" href="{{facebook_url @site.facebook}}" title="Facebook" target="_blank" rel="noopener">
+                            <i class="fa fa-facebook" style="border: 3px solid white; border-radius: 50px; padding-top: 3px; padding-bottom: 1px; padding-right: 6px; padding-left: 5px; "></i>
+                        </a>
+                    {{/if}}
+                    {{#if @site.twitter}}
+                        <a class="gh-social-twitter" href="{{twitter_url @site.twitter}}" title="Twitter" target="_blank" rel="noopener">{{> "icons/twitter"}}</a>
+                    {{/if}}
+                    <a class="gh-social-instagram" href="https://www.instagram.com/polihack.osut/" title="Instagram" target="_blank">
+                        <i class="fa fa-instagram" style="font-size: 30px;"></i>
+                    </a>
+                </div>
+                <button style="background-color: white; color: black; border:none; font-size: 14px; box-shadow:none; border-radius:8px;" type="button" ><a href="https://forms.gle/ZhjEskqkdkGM5S3u8">
+                    Register
+                </a></button>
+                {{!
+                <div class="dropdown" >
+                    <button style="background-color: white; color: black; border:none; font-size: 14px; box-shadow:none; border-radius:8px;" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Register
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="font-size: 16px; min-width: 15rem;">
+                        <li style="padding-left: 0;"><a class="dropdown-item" target="_blank" href="https://forms.gle/ZhjEskqkdkGM5S3u8">Student</a></li>
+                        <li style="padding-left: 0;"><a class="dropdown-item" target="_blank" href="https://forms.gle/ZhjEskqkdkGM5S3u8">Junior</a></li>
+                        <li style="padding-left: 0;"><a class="dropdown-item" target="_blank" href="https://forms.gle/mYgaqFjc7U1iwbzr5">Waiting List</a></li>
+                    </ul>
+                </div>
+                }}
+            </div>
+>>>>>>> 6b7227a05bd81bfa40a63d2cadfe7ad98185e80f
         </nav>
     </header>
 
@@ -90,11 +132,21 @@
     </div>
 
     {{!-- The global footer at the very bottom of the screen --}}
+<<<<<<< HEAD
     <footer class="footer">
     <div class="footer-content">
         <div class="footer-logo">
             <a href="https://www.utcluj.ro/"><img src="/assets/images/ut alb-01(1).png" alt="Logo" /></a>
             <a href="https://osut.org/"><img src="/assets/images/OSUT alb.png" alt="Logo" /></a>
+=======
+    <footer class="site-footer outer" style="background-color: black; z-index: 200; margin-top: 0; padding-top: 40px;">
+        <div class="inner">
+            <section class="copyright"><a href="{{@site.url}}">{{@site.title}}</a> &copy; {{date format="YYYY"}}</section>
+            <nav class="site-footer-nav">
+                {{navigation type="secondary"}}
+            </nav>
+            <div><a href="https://ghost.org/" target="_blank" rel="noopener">Powered by Ghost</a></div>
+>>>>>>> 6b7227a05bd81bfa40a63d2cadfe7ad98185e80f
         </div>
         <div class="footer-social">
             <a href="https://www.facebook.com/PoliHack.OSUT"><i class="fab fa-facebook-f"></i></a>

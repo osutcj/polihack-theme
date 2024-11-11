@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *,
 *::before,
 *::after {
@@ -64,3 +65,10 @@ h1 {
   transition: transform 0.3s ease, border 0.3s ease;
   z-index: 1;
 }
+=======
+.carousel {
+  max-width: 700px;
+  position: relative;
+  margin: auto;
+}
+>>>>>>> 6b7227a05bd81bfa40a63d2cadfe7ad98185e80f
