@@ -1,5 +1,5 @@
 {{!< default}}
- 
+
  <link rel="stylesheet" type="text/css" href="{{asset "assets/css/sponsori.css"}}" />
 <link rel="stylesheet" type="text/css" href="{{asset " assets/css1/file.css"}}" />
 <link rel="stylesheet" href="{{asset 'css/carousel-testimonials.css'}}" />
@@ -303,5 +303,126 @@ window.onclick = function(event) {
 
 </script>
 <link rel="stylesheet" type="text/css" href="{{asset 'assets/css/sponsori.css'}}" />
+=======
+ <link rel="stylesheet" type="text/css" href="{{asset "assets/css/sponsori.css"}}" />
+{{#post}}
+
+<main id="site-main" class="site-main">
+    <article class="article {{post_class}}">
+        <header class="article-header gh-canvas">
+            {{#if feature_image}}
+            <figure class="article-image">
+                <img
+                    srcset="{{img_url feature_image size="s"}} 300w,
+                            {{img_url feature_image size="m"}} 600w,
+                            {{img_url feature_image size="l"}} 1000w,
+                            {{img_url feature_image size="xl"}} 2000w"
+                    sizes="(min-width: 1400px) 1400px, 92vw"
+                    src="{{img_url feature_image size="xl"}}"
+                    alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}"
+                />
+                {{#if feature_image_caption}}
+                    <figcaption>{{feature_image_caption}}</figcaption>
+                {{/if}}
+            </figure>
+            {{/if}}
+
+  
+        </header>
+
+        
+      <section class = "sponsori-content">
+        
+         <div class = "card-category">
+            <div class = "card-bg">
+               <div class = "card-img img-5"></div>
+              <div class="icon-h">
+                    
+                     <a class="icon" href="https://www.vitaminaqua.ro/home"><i class="fa fa-globe"></i></a>
+               </div>
+            </div>
+            <div class = "card-bg">
+               <div class = "card-img img-4"></div>
+                <div class="icon-h">
+                     
+                     <a class="icon" href="https://www.guhring.com"><i class="fa fa-globe"></i></a>
+               </div>
+             
+            </div>
+            <div class = "card-bg">
+               <div class = "card-img img-1"></div>
+               <div class="icon-h">
+                    
+                     <a class="icon" href="https://www.pizzeriatoskana.ro"><i class="fa fa-globe"></i></a>
+               </div>
+            </div>
+            <div class = "card-bg">
+               <div class = "card-img img-2"></div>
+                <div class="icon-h">
+                     <a class="icon" href="https://www.digitalfullstack.co"><i class="fa fa-globe"></i></a>
+               </div>
+            </div>
+            <div class = "card-bg">
+               <div class = "card-img img-3"></div>
+                <div class="icon-h">
+                    
+                     <a class="icon" href="https://www.delonghi.com/ro-ro?utm_source=google&utm_medium=cpc&utm_campaign=RO_DL_hq_all-all_search-brand_googleads_STO-a.01.EXA.Exact_purchase&gad_source=1&gclid=Cj0KCQjwztOwBhD7ARIsAPDKnkAXa-VOOX58NFtGU3hL37flXFrylt8ThRAgT-n-OmhQFh0myeBKTZQaAv10EALw_wcB"><i class="fa fa-globe"></i></a>
+               </div>
+            </div>
+             <div class = "card-bg">
+               <div class = "card-img img-25"></div>
+                <div class="icon-h">
+                     
+                     <a class="icon" href="https://www.cloudflight.io/en/"><i class="fa fa-globe"></i></a>
+               </div>
+            </div>
+            <div class = "card-bg">
+               <div class = "card-img img-19"></div>
+                <div class="icon-h">
+                    
+                     <a class="icon" href="https://www.makeitinoradea.ro/bright-labs-incubator"><i class="fa fa-globe"></i></a>
+               </div>
+            </div>
+            <div class = "card-bg">
+               <div class = "card-img img-7"></div>
+                <div class="icon-h">
+                   
+                     <a class="icon" href="https://www.bissoft.ro"><i class="fa fa-globe"></i></a>
+               </div>
+            </div>
+            <div class = "card-bg">
+               <div class = "card-img img-8"></div>
+                <div class="icon-h">
+                     
+                     <a class="icon" href="https://www.betfair.ro"><i class="fa fa-globe"></i></a>
+               </div>
+            </div>
+            <div class = "card-bg">
+               <div class = "card-img img-6"></div>
+                <div class="icon-h">
+                    
+                     <a class="icon" href="https://arobs.com"><i class="fa fa-globe"></i></a>
+               </div>
+            </div>
+            <div class = "card-bg">
+               <div class = "card-img img-9"></div>
+                <div class="icon-h">
+                    
+                     <a class="icon" href="https://finshape.cz"><i class="fa fa-globe"></i></a>
+               </div>
+            </div>
+            
+         </div>
+
+
+         
+       
+
+      </section>
+    
+    </article>
+
+
+</main>
 
 {{/post}}
