@@ -1,12 +1,66 @@
 {{!< default}} {{!-- The tag above means: insert everything in this file into the {body} tag of the default.hbs template --}} 
-<link rel="stylesheet" type="text/css" href="{{asset "assets/css1/file.css"}}" />
+ <link rel="stylesheet" type="text/css" href="{{asset "assets/css/sponsori.css"}}" />
+<link rel="stylesheet" type="text/css" href="{{asset " assets/css1/file.css"}}" />
 <link rel="stylesheet" href="{{asset 'css/carousel-testimonials.css'}}" />
 <link rel="stylesheet" type="text/css" href="{{asset "assets/css/sponsori.css"}}" />
 <link rel="stylesheet" type="text/css" href="{{asset "assets/css/index.css"}}" />
 <link rel="stylesheet" type="text/css" href="{{asset "assets/css/screen.css"}}" />
+<link rel="stylesheet" type="text/css" href="{{asset "assets/css/carousel-premii.css"}}" />
 
 {{#post}} {{!-- Everything inside the #post block pulls data from the page --}} 
 <style>
+
+    
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
     /* Style buttons */
     .btn {
         background-color: #761114;
@@ -57,12 +111,172 @@
             margin-bottom: 20px; /* Space between stacked items */
         }
     }
+
+/*MENTORI*/
+
 </style>
 
 <main id="site-main" class="site-main">
     <img class="banner_ph" src="/assets/images/bgv16.png" alt="">
 
+
+    <br>
+    <br>
+
+
+<table style="margin: 0 auto; width: 100%; text-align: center;">
+    <tr>
+        <td style="padding-right: 2vw;">
+            <h1 style="color: rgb(118, 17, 20);">MENTORS</h1>
+        </td>
+        <td style="padding-left: 2vw;">
+            <h1 style="color: rgb(118, 17, 20);">JUDGES</h1>
+        </td>
+    </tr>
+     <tr>
+        <td style="padding-right: 2vw;">
+            <h5 style="color: rgb(255, 255, 255);"> Daniel Todasca - CloudFlight </h5>
+        </td>
+        <td style="padding-left: 2vw;">
+            <h5 style="color: rgb(255, 255, 255);">Mureșan Cezara - CloudFlight</h5>
+        </td>
+    </tr>
+    <tr>
+        <td style="padding-right: 2vw;">
+            <h5 style="color: white;">Mihalcea Leonard - CloudFlight</h5>
+        </td>
+        <td style="padding-left: 2vw;">
+            <h5 style="color: white;">Retegan Catalin - CloudFlight</h5>
+        </td>
+    </tr>
+    <tr>
+        <td style="padding-right: 2vw;">
+            <h5 style="color: white;">Popa Marcel - CloudFlight</h5>
+        </td>
+        <td style="padding-left: 2vw;">
+            <h5 style="color: white;">Nas Mihai - Cluj Startups</h5>
+        </td>
+    </tr>
+    <tr>
+        <td style="padding-right: 2vw;">
+            <h5 style="color: white;">Lucian Luțaș - Digital Fullstack</h5>
+        </td>
+        <td style="padding-left: 2vw;">
+            <h5 style="color: white;">Alexandru Berciu - UTCN</h5>
+        </td>
+    </tr>
+    <tr>
+        <td style="padding-right: 2vw;">
+            <h5 style="color: white;">Dan Toderici - Finshape</h5>
+        </td>
+        <td style="padding-left: 2vw;">
+            <h5 style="color: white;">Bogdan Iancu - UTCN</h5>
+        </td>
+    </tr>
+    <tr>
+        <td style="padding-right: 2vw;">
+            <h5 style="color: white;">Andreea Rautescu - Finshape</h5>
+        </td>
+        <td style="padding-left: 2vw;">
+        </td>
+    </tr>
+    <tr>
+        <td style="padding-right: 2vw;">
+            <h5 style="color: white;">Andrei Nuț - Finshape</h5>
+        </td>
+        <td style="padding-left: 2vw;">
+        </td>
+    </tr>
+    <tr>
+        <td style="padding-right: 2vw;">
+            <h5 style="color: white;">Bianca Szekely - Finshape</h5>
+        </td>
+        <td style="padding-left: 2vw;">
+        </td>
+    </tr>
+    <tr>
+        <td style="padding-right: 2vw;">
+            <h5 style="color: white;">Ovidiu Drăgan - Cluj Startups</h5>
+        </td>
+        <td style="padding-left: 2vw;">
+        </td>
+    </tr>
+    <tr>
+        <td style="padding-right: 2vw;">
+            <h5 style="color: white;">Călin Șipoș - Cluj Startups</h5>
+        </td>
+        <td style="padding-left: 2vw;">
+        </td>
+    </tr>
+    <tr>
+        <td style="padding-right: 2vw;">
+            <h5 style="color: white;">Daniel Tătar - Cluj Startups</h5>
+        </td>
+        <td style="padding-left: 2vw;">
+        </td>
+    </tr>
+</table>
+
+<br><br>
+
+
+  
+<h1 style="text-align: center; color:rgb(118, 17, 20)">VOLUNTEERS</h1>
+  <div class="scroll-container">
+    <img class="myImg" src="/assets/images/v16/voluntari/1.png" style="width:80%;max-width:300px;margin:3vw;">
+    <img class="myImg" src="/assets/images/v16/voluntari/2.png" style="width:80%;max-width:300px;margin:3vw;" >
+    <img class="myImg" src="/assets/images/v16/voluntari/3.png" style="width:80%;max-width:300px;margin:3vw;" >
+    <img class="myImg" src="/assets/images/v16/voluntari/4.png" style="width:80%;max-width:300px;margin:3vw;" >
+    <img class="myImg" src="/assets/images/v16/voluntari/5.png" style="width:80%;max-width:300px;margin:3vw;" >
+    <img class="myImg" src="/assets/images/v16/voluntari/6.png" style="width:80%;max-width:300px;margin:3vw;" >
+    <img class="myImg" src="/assets/images/v16/voluntari/7.png" style="width:80%;max-width:300px;margin:3vw;" >
+    <img class="myImg" src="/assets/images/v16/voluntari/8.png" style="width:80%;max-width:300px;margin:3vw;" >
+    <img class="myImg" src="/assets/images/v16/voluntari/9.png" style="width:80%;max-width:300px;margin:3vw;" >
+    <img class="myImg" src="/assets/images/v16/voluntari/10.png" style="width:80%;max-width:300px;margin:3vw;" >
+    <img class="myImg" src="/assets/images/v16/voluntari/11.png" style="width:80%;max-width:300px;margin:3vw;" >
+    <img class="myImg" src="/assets/images/v16/voluntari/12.png" style="width:80%;max-width:300px;margin:3vw;" >
+    <img class="myImg" src="/assets/images/v16/voluntari/13.png" style="width:80%;max-width:300px;margin:3vw;">
+    <img class="myImg" src="/assets/images/v16/voluntari/14.png" style="width:80%;max-width:300px;margin:3vw;" >
+    <img class="myImg" src="/assets/images/v16/voluntari/15.png" style="width:80%;max-width:300px;margin:3vw;" >
+    <img class="myImg" src="/assets/images/v16/voluntari/16.png" style="width:80%;max-width:300px;margin:3vw;">
+    <img class="myImg" src="/assets/images/v16/voluntari/17.png" style="width:80%;max-width:300px;margin:3vw;" >
+    <img class="myImg" src="/assets/images/v16/voluntari/18.png" style="width:80%;max-width:300px;margin:3vw;" >
+    <img class="myImg" src="/assets/images/v16/voluntari/19.png" style="width:80%;max-width:300px;margin:3vw;" >
+    <img class="myImg" src="/assets/images/v16/voluntari/20.png" style="width:80%;max-width:300px;margin:3vw;" >
+    <img class="myImg" src="/assets/images/v16/voluntari/21.png" style="width:80%;max-width:300px;margin:3vw;" >
+    <img class="myImg" src="/assets/images/v16/voluntari/22.png" style="width:80%;max-width:300px;margin:3vw;" >
+    <img class="myImg" src="/assets/images/v16/voluntari/23.png" style="width:80%;max-width:300px;margin:3vw;" >
+    <img class="myImg" src="/assets/images/v16/voluntari/24.png" style="width:80%;max-width:300px;margin:3vw;" >
+    <img class="myImg" src="/assets/images/v16/voluntari/25.png" style="width:80%;max-width:300px;margin:3vw;">
+    <img class="myImg" src="/assets/images/v16/voluntari/26.png" style="width:80%;max-width:300px;margin:3vw;" >
+    <img class="myImg" src="/assets/images/v16/voluntari/27.png" style="width:80%;max-width:300px;margin:3vw;">
+     <img class="myImg" src="/assets/images/v16/voluntari/28.png" style="width:80%;max-width:300px;margin:3vw;" >
+  
+   </div>
+
+
+
+
+
+
     <h1 style="color:white;text-align:center;margin-top:5vh;">You should read this.</h1>
+   
+     <div class="container">
+        <div class="column">
+            <img src="/assets/images/fee.png" style="width: cover; height:cover;" />
+             <br>
+            <a href="https://docs.google.com/document/d/1KHjfw-zVJBrEotV9snUCjmU6ylteaR0nYM_XRR3gDX0/edit?tab=t.0" class="btn" target="_blank">
+                Program
+            </a>
+        </div>
+
+
+         <div class="column">
+            <img src="/assets/images/RP.png" style="width: cover; height:cover;" />
+        
+        </div>
+    </div>
+
     <div class="container">
         <div class="column">
             <img src="/assets/images/regulations.png" style="width: cover; height:cover;" />
@@ -81,16 +295,7 @@
         </div>
          
     </div>
-    <div class="container">
-        <div class="column">
-            <img src="/assets/images/fee.png" style="width: cover; height:cover;" />
-        
-        </div>
-         <div class="column">
-            <img src="/assets/images/RP.png" style="width: cover; height:cover;" />
-        
-        </div>
-    </div>
+   
     <br><br>
 </main>
 
